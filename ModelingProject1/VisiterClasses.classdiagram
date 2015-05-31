@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="24eedcc0-4ce6-4304-a6e5-ac1e584dc930" name="UMLClassDiagram1" linkedPackageId="7c384dd1-df15-44c8-a626-5d320a24f4a8" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="eee380c7-3d60-4001-91a1-ab744e3a808f">
+      <profileInstance Id="7ff60e0a-410f-4ba6-aa78-19229795065b" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="a689b945-ddee-4765-93b8-c8caad91b67e">
+      <profileInstance Id="5c6c7cbc-9f6b-4151-b2b2-b4529c8a58f0" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="062290bb-76c1-4ede-b8f2-fffa1ad19c73" name="RotateLeft" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="8695b28c-40b7-48a1-9619-db1bb4a9b84e" />
+        <ownedAttributesInternal>
+          <property Id="66c49c0a-9f1d-48f2-85c1-3a48a7beb40a" name="board" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5a2a21a9-869b-4dbd-9cf4-3b17d575347f" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="e56224c3-1fac-44aa-ba1c-487fa22cea67" LastKnownName="Board" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="11ffd8f8-5d08-4838-bc7d-70a932885be3" name="RotateLeftAction" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="4dd810fc-ca23-4ca2-bcfe-84ccadd0e64d" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="efe67b86-c454-4625-b58f-c2a561b2df53" direction="Return" isUnique="false">
+                  <elementDefinition Id="08c31d8d-b7b9-43f9-af2d-308b484a7511" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="b9aebc1d-9ffd-4dc8-88f7-f4b98eb54799" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="e549c995-8705-4ec5-bb81-760b6ee73633" name="poly" direction="In" isUnique="false">
+                  <elementDefinition Id="3e9ccd9b-e136-4313-a273-c86c1a4000c9" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="df74e64f-69df-483b-b662-f413c97081c1" LastKnownName="Polyomino" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="0d93410c-95a1-4706-89ee-8619ee679aca" name="IPieceRotation" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a47430de-2498-4dc5-9342-b21192247556" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="946d81e7-ce26-4289-9a48-463b22009e69" name="piece" direction="In" isUnique="false">
+                  <elementDefinition Id="41d2582e-4576-4864-b599-91a8202675fe" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="1dea3125-f11e-4a9f-bfe5-c543dbd82b47" LastKnownName="IPiece" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="20007a80-d0f9-466c-9517-9e4ca8ae0232" direction="Return" isUnique="false">
+                  <elementDefinition Id="1801ee15-f69f-4a94-94b3-80cef33027a8" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="b9aebc1d-9ffd-4dc8-88f7-f4b98eb54799" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="791a6fdf-157f-47a0-9255-f3be3f73a596" name="RotateLeft" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="33950e6d-67da-45ec-9749-d7c580542a4d" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="aaadd328-8627-48ef-a5c3-a43d6a252f84" name="board" direction="In" isUnique="false">
+                  <elementDefinition Id="74803093-f543-47a9-b5b7-a9ddb820a9a3" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="e56224c3-1fac-44aa-ba1c-487fa22cea67" LastKnownName="Board" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="e3dab5e5-61be-4c18-b6f7-fc85208c4789" name="RotateRight" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b9c7766f-afa9-4d70-9b36-2ef207371380" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="1dea3125-f11e-4a9f-bfe5-c543dbd82b47" name="IPiece" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::IPiece">
+        <elementDefinition Id="738cae29-fabb-4b4f-a7de-a4a67b91e515" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="b9aebc1d-9ffd-4dc8-88f7-f4b98eb54799" name="void" isAbstract="false" isLeaf="false" cachedFullName="void">
+        <elementDefinition Id="7b917738-279c-41a8-9918-ed035d35217f" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="df74e64f-69df-483b-b662-f413c97081c1" name="Polyomino" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::Polyomino">
+        <elementDefinition Id="fffee321-d607-45e4-8a9e-187232fef727" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="e56224c3-1fac-44aa-ba1c-487fa22cea67" name="Board" isAbstract="false" isLeaf="false" cachedFullName="Board">
+        <elementDefinition Id="669dc5a4-7214-4b7c-b041-179d862639b8" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="7c384dd1-df15-44c8-a626-5d320a24f4a8" name="ModelingProject1">
+    <elementDefinition Id="8c75b22c-645e-42c9-b919-f7081da536d3" />
+  </package>
+</logicalClassDesignerModel>

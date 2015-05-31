@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30501.0
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tetris", "Tetris\Tetris.csproj", "{540FDA90-11FB-43A4-BC99-801348DAC421}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{9593FE7C-A874-434E-83CF-7918BB2712D9}"
+EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "TetrisUML", "ModelingProject1\TetrisUML.modelproj", "{CAD38038-2DA3-42F8-9DD8-F6E3482AB042}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,16 @@ Global
 		{9593FE7C-A874-434E-83CF-7918BB2712D9}.Release|ARM.ActiveCfg = Release|Any CPU
 		{9593FE7C-A874-434E-83CF-7918BB2712D9}.Release|x64.ActiveCfg = Release|Any CPU
 		{9593FE7C-A874-434E-83CF-7918BB2712D9}.Release|x86.ActiveCfg = Release|Any CPU
+		{CAD38038-2DA3-42F8-9DD8-F6E3482AB042}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAD38038-2DA3-42F8-9DD8-F6E3482AB042}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAD38038-2DA3-42F8-9DD8-F6E3482AB042}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{CAD38038-2DA3-42F8-9DD8-F6E3482AB042}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{CAD38038-2DA3-42F8-9DD8-F6E3482AB042}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{CAD38038-2DA3-42F8-9DD8-F6E3482AB042}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAD38038-2DA3-42F8-9DD8-F6E3482AB042}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAD38038-2DA3-42F8-9DD8-F6E3482AB042}.Release|ARM.ActiveCfg = Release|Any CPU
+		{CAD38038-2DA3-42F8-9DD8-F6E3482AB042}.Release|x64.ActiveCfg = Release|Any CPU
+		{CAD38038-2DA3-42F8-9DD8-F6E3482AB042}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

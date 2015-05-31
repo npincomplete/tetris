@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="ccad609d-5b21-4b44-8584-07e1dccfa831" name="Model" linkedPackageId="735074b1-9004-4e7e-a429-25e1e2ea6c6c" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="2e5e1f52-4e66-4f53-b9dd-b05bfdbe1943" name="TetrisModel" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="0a422664-746a-4ea2-ae06-633231b4356b" />
+        <suppliersInternal>
+          <dependency Id="7ce1f139-08bd-4bf8-b13f-fc1e3ae294f4">
+            <classMoniker Id="3d215429-0d49-4b73-9875-63c5db036cd5" LastKnownName="TetrisViewer" />
+            <elementDefinition Id="466f834a-cd72-4aa1-abbb-407015a72b6f" />
+          </dependency>
+        </suppliersInternal>
+        <targetEnds>
+          <association Id="236ee71d-4a22-49b9-8326-43cb22c03026" isDerived="false" sourceEndRoleName="TetrisModel" targetEndRoleName="board" isLeaf="false" isAbstract="false">
+            <classMoniker Id="aa369771-d5e8-4bd5-83e8-e644a7555780" LastKnownName="board" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e525fd79-045e-4063-9fe9-80264ece3bde" name="TetrisModel" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="044a4f5f-975a-4f25-91c7-882dbe46de13" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5eed3d42-2366-48e1-9faf-7dd857e80af2" name="board" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c7b8b46f-4da4-4c04-aa9c-45615d205dd0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="18ed3f82-ec50-4b94-9b10-db6edd935cef" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="a9e48e8c-7d80-4a2f-b382-c9a589a78318" name="matrix of blocks" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9232afa5-c04d-4bb0-a66e-16acd04dccbe" />
+          </property>
+          <property Id="8b0c5510-f37e-4657-9bde-7149e1e1d09b" name="PolynominoFactory" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a0470da6-b116-4b12-b3a4-f64bbeb65a93" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="36e3daf4-2ecc-4ddf-ae0f-7b8f7191eab3" name="Operation1" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="feceba35-6b9c-4d80-8538-395e76c8fb41" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="3d215429-0d49-4b73-9875-63c5db036cd5" name="TetrisViewer" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="83d58309-c905-4c8f-ab6c-108a317245f2" />
+        <targetEnds>
+          <association Id="12a4a1cf-4c12-4418-91e2-f490f0ff5bec" isDerived="false" sourceEndRoleName="TetrisViewer" targetEndRoleName="board" isLeaf="false" isAbstract="false">
+            <classMoniker Id="aa369771-d5e8-4bd5-83e8-e644a7555780" LastKnownName="board" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d0836e81-f21f-4c7f-842b-14172d130a03" name="TetrisViewer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="83acb94c-196a-46cd-880b-6736745d756f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0890b6c8-b4ed-4743-a6d7-a5c10efec63a" name="board" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ae906ae1-34a1-457d-a44c-95a651a5f459" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f3851322-accd-473f-baac-cf4b49dddfc7" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="aa369771-d5e8-4bd5-83e8-e644a7555780" name="board" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ef890e86-67ab-452e-a783-0cafe23bb7d0" />
+        <ownedAttributesInternal>
+          <property Id="a751b9dd-d53a-4511-a67d-d21d2e90d5c3" name="array of blocks" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="99c3279a-885e-46e0-a123-6da7d7e432e5" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="735074b1-9004-4e7e-a429-25e1e2ea6c6c" name="ModelingProject1">
+    <elementDefinition Id="8c75b22c-645e-42c9-b919-f7081da536d3" />
+    <profileInstances>
+      <packageHasProfileInstances Id="57fb6f0e-3e11-406b-95df-032b77e9b14b">
+        <profileInstance Id="4e0ca4fe-3bbf-4999-8b8e-68bb1e157962" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="3c9fd31c-3910-46bd-9644-a146ce2583cf">
+        <profileInstance Id="fc412258-c1ef-4613-bbfa-7b766c410564" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>
