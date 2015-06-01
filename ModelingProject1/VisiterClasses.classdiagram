@@ -1,82 +1,226 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="24eedcc0-4ce6-4304-a6e5-ac1e584dc930" name="UMLClassDiagram1" linkedPackageId="7c384dd1-df15-44c8-a626-5d320a24f4a8" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="eee380c7-3d60-4001-91a1-ab744e3a808f">
-      <profileInstance Id="7ff60e0a-410f-4ba6-aa78-19229795065b" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="a689b945-ddee-4765-93b8-c8caad91b67e">
-      <profileInstance Id="5c6c7cbc-9f6b-4151-b2b2-b4529c8a58f0" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
+  <ownedCommentsInternal>
+    <comment Id="6ea253f9-937a-4446-b978-2783c0b681fc">
+      <elementDefinition Id="597b7bfc-2d7c-48c8-9d0e-379e43113af2" />
+      <body>these are the leaf visitors meaning that they don't depend on any other visitor methods</body>
+    </comment>
+    <comment Id="30a5e4ca-b45f-41ee-8af8-4e2c0e54b6ee">
+      <elementDefinition Id="c08a902a-c3fa-4768-91cf-f5d2562d1384" />
+      <body>these depend on the the previous visitor strategies</body>
+    </comment>
+    <comment Id="286438df-ea5b-4fa6-a7c9-7be52cd970ac">
+      <elementDefinition Id="06f776df-3173-48c3-9a8b-91f00508fce3" />
+      <body>these depend on the the previous visitor strategies</body>
+    </comment>
+  </ownedCommentsInternal>
   <packagedElements>
+    <packageHasNamedElement>
+      <referencedType Id="b217b582-2fc5-475f-b702-10e9ecabf3c0" name="Board" isAbstract="false" isLeaf="false" cachedFullName="Board">
+        <elementDefinition Id="669dc5a4-7214-4b7c-b041-179d862639b8" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="7957d097-1d85-45ba-949d-0017360121c5" name="void" isAbstract="false" isLeaf="false" cachedFullName="void">
+        <elementDefinition Id="7b917738-279c-41a8-9918-ed035d35217f" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="1489e995-db5f-41eb-b3f2-c89be33a7bf6" name="Polyomino" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::Polyomino">
+        <elementDefinition Id="fffee321-d607-45e4-8a9e-187232fef727" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="2487fd20-5240-44de-aeb3-0342785300b1" name="IPiece" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::IPiece">
+        <elementDefinition Id="738cae29-fabb-4b4f-a7de-a4a67b91e515" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="ebbfc9cc-94d5-481f-9f90-414b34b5ce39" name="RotateLeftVisitor" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::RotateLeftVisitor">
+        <elementDefinition Id="ca28fe83-228d-4a66-8f3e-2ed978e6f7a6" />
+      </referencedType>
+    </packageHasNamedElement>
     <logicalClassDesignerModelHasTypes>
-      <class Id="062290bb-76c1-4ede-b8f2-fffa1ad19c73" name="RotateLeft" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="8695b28c-40b7-48a1-9619-db1bb4a9b84e" />
+      <class Id="a3b53cab-88a1-4f3f-b56e-22219b0b97f5" name="RotateLeftVisitor" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ca28fe83-228d-4a66-8f3e-2ed978e6f7a6" />
         <ownedAttributesInternal>
-          <property Id="66c49c0a-9f1d-48f2-85c1-3a48a7beb40a" name="board" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="5a2a21a9-869b-4dbd-9cf4-3b17d575347f" />
+          <property Id="39b5ae84-e21a-4dcf-a998-9223d8047a7c" name="board" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4efa9af9-95c2-42c4-a2d6-c37993f93e08" />
             <type_NamedElement>
-              <referencedTypeMoniker Id="e56224c3-1fac-44aa-ba1c-487fa22cea67" LastKnownName="Board" />
+              <referencedTypeMoniker Id="b217b582-2fc5-475f-b702-10e9ecabf3c0" LastKnownName="Board" />
+            </type_NamedElement>
+          </property>
+          <property Id="6b30a692-9652-4a3f-9011-1dff743e2d14" name="canChange" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="cd976f49-ee34-406e-bf09-bad999795391" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="01ab863a-ab54-4d6d-afe9-8fa85da4cd25" LastKnownName="CanChangeLocalVisitor" />
             </type_NamedElement>
           </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
-          <operation Id="11ffd8f8-5d08-4838-bc7d-70a932885be3" name="RotateLeftAction" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="4dd810fc-ca23-4ca2-bcfe-84ccadd0e64d" />
+          <operation Id="c7b2b31c-1e03-4629-9908-8d9bf3e52d5a" name="RotateLeftCall" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="7d479fec-bbbb-40ec-9cb4-302a69211025" />
             <ownedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="efe67b86-c454-4625-b58f-c2a561b2df53" direction="Return" isUnique="false">
-                  <elementDefinition Id="08c31d8d-b7b9-43f9-af2d-308b484a7511" />
+                <parameter Id="a0f94448-b456-4bee-b5b2-81e6b3d1c828" direction="Return" isUnique="false">
+                  <elementDefinition Id="907e4682-24bc-4b80-8011-ff97a40536df" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="b9aebc1d-9ffd-4dc8-88f7-f4b98eb54799" LastKnownName="void" />
+                    <referencedTypeMoniker Id="7957d097-1d85-45ba-949d-0017360121c5" LastKnownName="void" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="e549c995-8705-4ec5-bb81-760b6ee73633" name="poly" direction="In" isUnique="false">
-                  <elementDefinition Id="3e9ccd9b-e136-4313-a273-c86c1a4000c9" />
+                <parameter Id="04599d27-bb4b-4753-b224-21f0b95a4ee1" name="poly" direction="In" isUnique="false">
+                  <elementDefinition Id="3c121747-7f09-48b8-8ea8-632a0cf00827" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="df74e64f-69df-483b-b662-f413c97081c1" LastKnownName="Polyomino" />
+                    <referencedTypeMoniker Id="1489e995-db5f-41eb-b3f2-c89be33a7bf6" LastKnownName="Polyomino" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
-          <operation Id="0d93410c-95a1-4706-89ee-8619ee679aca" name="IPieceRotation" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="a47430de-2498-4dc5-9342-b21192247556" />
+          <operation Id="8114d192-2267-4588-b272-ff46d46a8609" name="IPiece" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="60c70ae7-cb56-48f6-b5d6-14c200d09fe2" />
             <ownedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="946d81e7-ce26-4289-9a48-463b22009e69" name="piece" direction="In" isUnique="false">
-                  <elementDefinition Id="41d2582e-4576-4864-b599-91a8202675fe" />
+                <parameter Id="f30f51d7-014d-4d78-b3d6-261768fdc33e" direction="Return" isUnique="false">
+                  <elementDefinition Id="af728f51-3e2b-4706-94dd-b5c7bda17bc8" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="1dea3125-f11e-4a9f-bfe5-c543dbd82b47" LastKnownName="IPiece" />
+                    <referencedTypeMoniker Id="7957d097-1d85-45ba-949d-0017360121c5" LastKnownName="void" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="20007a80-d0f9-466c-9517-9e4ca8ae0232" direction="Return" isUnique="false">
-                  <elementDefinition Id="1801ee15-f69f-4a94-94b3-80cef33027a8" />
+                <parameter Id="f8c62c96-5ea6-4d22-89dc-7ff908eb048d" name="piece" direction="In" isUnique="false">
+                  <elementDefinition Id="3fe71be1-d65e-4087-92fa-15aa47fcf1ab" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="b9aebc1d-9ffd-4dc8-88f7-f4b98eb54799" LastKnownName="void" />
+                    <referencedTypeMoniker Id="2487fd20-5240-44de-aeb3-0342785300b1" LastKnownName="IPiece" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
           </operation>
-          <operation Id="791a6fdf-157f-47a0-9255-f3be3f73a596" name="RotateLeft" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="33950e6d-67da-45ec-9749-d7c580542a4d" />
+          <operation Id="2567d226-c9b9-4bd0-8da9-2147c0083d2d" name="RotateLeftVisitor" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e0895ce4-0c6b-4634-bfb4-96ed02d818fd" />
             <ownedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="aaadd328-8627-48ef-a5c3-a43d6a252f84" name="board" direction="In" isUnique="false">
-                  <elementDefinition Id="74803093-f543-47a9-b5b7-a9ddb820a9a3" />
+                <parameter Id="daf9b510-877f-4409-8c9d-1227fddd9f43" name="board" direction="In" isUnique="false">
+                  <elementDefinition Id="ca177990-9643-42eb-b3f7-9f6a95759ca4" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="e56224c3-1fac-44aa-ba1c-487fa22cea67" LastKnownName="Board" />
+                    <referencedTypeMoniker Id="b217b582-2fc5-475f-b702-10e9ecabf3c0" LastKnownName="Board" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="c6023174-451a-4cfd-a03e-cb9b5cd36db9" name="change" direction="In" isUnique="false">
+                  <elementDefinition Id="8374bc72-3b30-4bac-bc94-9614fae38573" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="01ab863a-ab54-4d6d-afe9-8fa85da4cd25" LastKnownName="CanChangeLocalVisitor" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="39edcfb5-9db3-494c-9798-045b26f1befd" name="OPiece" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e4c30b6e-3d6f-4fca-bb2c-47b82da599b2" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="4e539612-43fc-4400-975b-ada4022c81c9" direction="Return" isUnique="false">
+                  <elementDefinition Id="74946544-2146-48ff-afac-f57ddf2f72ac" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="7957d097-1d85-45ba-949d-0017360121c5" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="cccb617c-ca98-4e2a-9ba9-45bc5ba8c3c0" name="piece" direction="In" isUnique="false">
+                  <elementDefinition Id="48eff896-ed04-4297-b29b-c5cc57a60a5f" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="8142e778-1c87-48a4-856e-be8eb5dbb598" LastKnownName="OPiece" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="7995ce73-dfc8-4651-ad43-7c9320f2980f" name="LPiece" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="db93aff2-b36f-4ea9-a157-499af6b569e7" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="b05313e4-e721-42a0-9832-971c81102f02" direction="Return" isUnique="false">
+                  <elementDefinition Id="e056b89a-8795-4e90-8c2e-d5d1741d9a5d" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="7957d097-1d85-45ba-949d-0017360121c5" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="949b0d7a-cf39-463d-afd9-44978db06463" name="piece" direction="In" isUnique="false">
+                  <elementDefinition Id="0c45e9c5-a728-4245-9775-c7a771add244" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="6e1a24ae-d3b8-4491-9680-309324965ba2" LastKnownName="LPiece" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="41b1ec8f-872f-47cd-94b5-ec64937f4621" name="SPiece" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="045a8ada-f434-4da8-ad96-d4f9b88d46d7" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="77c800f6-ff58-48f3-8b4d-c09a5166ac2c" direction="Return" isUnique="false">
+                  <elementDefinition Id="bec306ff-87fe-4bdb-a93e-8c1cdb08d108" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="7957d097-1d85-45ba-949d-0017360121c5" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="039ba332-e15a-4d7a-aac0-c70642cb877e" name="piece" direction="In" isUnique="false">
+                  <elementDefinition Id="9e2f500a-1e2a-4813-87a0-514af1e12508" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="1a5f1ded-a4b8-4572-9291-46ed178abb3b" LastKnownName="SPiece" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="1db55d23-e3c5-42bf-b8a1-ee1885cb035c" name="ZPiece" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="8759c546-f9fb-4194-a4b0-5df49b3bd723" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="6e5dd00b-4dc9-4cd2-896a-b8833876acf0" direction="Return" isUnique="false">
+                  <elementDefinition Id="d8763986-f456-48af-b834-9ccb3c3acbe1" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="7957d097-1d85-45ba-949d-0017360121c5" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="436b6225-72ee-40a7-97c7-6e9a580943d2" name="piece" direction="In" isUnique="false">
+                  <elementDefinition Id="b703a6a6-f42c-46a8-9424-ef5aaa7d7387" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="992171e2-e5d7-482d-a6f0-c8849b0488cb" LastKnownName="ZPiece" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="602225ee-6a26-48af-91b0-9bf0a5881022" name="JPiece" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="21770826-ffb1-4bcc-b5ce-d2ba52c64ffb" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="ba25cbcb-f6c7-44c3-8e86-2b0665f40fae" name="piece" direction="In" isUnique="false">
+                  <elementDefinition Id="e46fbd98-c7c0-4690-b94f-da19f87c9d1b" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="66b03a90-4e5e-49f2-880d-6778c3395a59" LastKnownName="JPiece" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="0bee17e4-43c6-477b-becc-c2d461db322a" direction="Return" isUnique="false">
+                  <elementDefinition Id="a694d51e-5299-48c2-af6e-dc51e1a4a7c6" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="7957d097-1d85-45ba-949d-0017360121c5" LastKnownName="void" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
@@ -86,32 +230,1793 @@
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="e3dab5e5-61be-4c18-b6f7-fc85208c4789" name="RotateRight" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="b9c7766f-afa9-4d70-9b36-2ef207371380" />
-      </class>
+      <Interface Id="d2f07ddf-1421-4174-98d1-49393cee7617" name="RotateLeft" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="61deaaeb-74c6-4167-b298-7fa95a27cbce" />
+        <suppliersInternal>
+          <dependency Id="9dc1ab6f-4d16-47ef-9743-a62bc913347a">
+            <classMoniker Id="a3b53cab-88a1-4f3f-b56e-22219b0b97f5" LastKnownName="RotateLeftVisitor" />
+            <elementDefinition Id="95054cc6-5cfb-4d2e-959e-31dba34ebbc0" />
+          </dependency>
+        </suppliersInternal>
+        <ownedOperations>
+          <operation Id="9b4ca4a6-e3c9-4e4b-a3e1-43473812bcc1" name="RotateLeftAccept" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="076ae3a0-9b6a-49b7-89c5-3c63ab2d7d54" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="09d3966b-dcbd-441d-9fba-775406cf44bd" name="visitor" direction="In" isUnique="false">
+                  <elementDefinition Id="2bd5f182-80a3-4f58-8829-7ff1e12a5eab" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="ebbfc9cc-94d5-481f-9f90-414b34b5ce39" LastKnownName="RotateLeftVisitor" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="544fe664-aa01-453c-910b-ce99f18c6ebb" name="RotateRight" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="68037ce9-d450-4053-91e6-c36ce5edf349" />
+        <suppliersInternal>
+          <dependency Id="4e6e6e22-3d74-41f7-951f-0e58485bbc72">
+            <classMoniker Id="5487e3fe-2c24-4903-a238-47d485f64aaf" LastKnownName="RotateRightVisitor" />
+            <elementDefinition Id="4353bcb8-0d64-4a01-9f9d-0f3040538aea" />
+          </dependency>
+        </suppliersInternal>
+        <ownedOperations>
+          <operation Id="d22c080d-a945-4a49-ba3f-9225e2859197" name="RotateRightAccept" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="613fedbd-858b-4a0f-913b-9cc034c849c8" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="f3f7cd18-f796-4570-b08b-5ccdaadf3a5b" name="visitor" direction="In" isUnique="false">
+                  <elementDefinition Id="789120bd-c19f-4a30-85a6-37f9344f80ff" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="44c9d92c-5d3d-43f5-b5cb-80dbafe23240" LastKnownName="RotateRightVisitor" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
     </logicalClassDesignerModelHasTypes>
     <packageHasNamedElement>
-      <referencedType Id="1dea3125-f11e-4a9f-bfe5-c543dbd82b47" name="IPiece" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::IPiece">
-        <elementDefinition Id="738cae29-fabb-4b4f-a7de-a4a67b91e515" />
+      <referencedType Id="44c9d92c-5d3d-43f5-b5cb-80dbafe23240" name="RotateRightVisitor" isAbstract="false" isLeaf="false" cachedFullName="RotateRightVisitor">
+        <elementDefinition Id="55f74835-20d7-4374-b956-6c39601eef86" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="c5d5fe6b-8bfc-4c2b-a153-3c7edb9272f6" name="FinalizeOnBoard" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="36c36ba6-de2c-41c3-9839-1227c108b209" />
+        <suppliersInternal>
+          <dependency Id="ee072ba7-7548-469f-b01a-7ab509166e9b">
+            <classMoniker Id="679c953a-532c-4eb6-96a6-2d98eb0a7e67" LastKnownName="FinalizeOnBoardVisitor" />
+            <elementDefinition Id="317b5f91-14d3-4f89-b2c3-75fbf86ba508" />
+          </dependency>
+        </suppliersInternal>
+        <ownedOperations>
+          <operation Id="d90332b1-796b-4db6-96d2-d1db8c090f74" name="FinalizeOnBoardAccept" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="afb8005a-a479-4dcf-b9e7-1998fc732a1c" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="abbaca13-ccde-4c23-91f0-8b5317417bab" name="vistor" direction="In" isUnique="false">
+                  <elementDefinition Id="245a6d92-a8b1-4b13-85b1-4165d2f90d6c" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="de74aa14-55cb-4e05-bac4-6822b428acea" LastKnownName="FinalizeOnBoardVisitor" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="de74aa14-55cb-4e05-bac4-6822b428acea" name="FinalizeOnBoardVisitor" isAbstract="false" isLeaf="false" cachedFullName="FinalizeOnBoardVisitor">
+        <elementDefinition Id="36c1537c-46f6-4ae9-8f6f-8b2b9a01dcc8" />
       </referencedType>
     </packageHasNamedElement>
     <packageHasNamedElement>
-      <referencedType Id="b9aebc1d-9ffd-4dc8-88f7-f4b98eb54799" name="void" isAbstract="false" isLeaf="false" cachedFullName="void">
+      <referencedType Id="8142e778-1c87-48a4-856e-be8eb5dbb598" name="OPiece" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::OPiece">
+        <elementDefinition Id="b64fdd32-f7b4-4b8b-b675-66349b528274" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="6e1a24ae-d3b8-4491-9680-309324965ba2" name="LPiece" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::LPiece">
+        <elementDefinition Id="b25ebbff-8c6a-4dc7-a102-f6b727e732e4" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="1a5f1ded-a4b8-4572-9291-46ed178abb3b" name="SPiece" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::SPiece">
+        <elementDefinition Id="02c5d5ac-20a9-44e8-b9f7-099ef3b517d9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="992171e2-e5d7-482d-a6f0-c8849b0488cb" name="ZPiece" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::ZPiece">
+        <elementDefinition Id="87888bc4-ac13-485f-bffe-c286db5188d3" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="66b03a90-4e5e-49f2-880d-6778c3395a59" name="JPiece" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::JPiece">
+        <elementDefinition Id="5e24197b-b32f-4ee7-bee2-a23587c8d0b2" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="25fcf25b-1d4c-4fda-aca4-e10fe5b2edac" name="Board" isAbstract="false" isLeaf="false" cachedFullName="Board">
+        <elementDefinition Id="669dc5a4-7214-4b7c-b041-179d862639b8" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="679b86af-733e-4421-8c2b-9e382ff01b20" name="void" isAbstract="false" isLeaf="false" cachedFullName="void">
         <elementDefinition Id="7b917738-279c-41a8-9918-ed035d35217f" />
       </referencedType>
     </packageHasNamedElement>
     <packageHasNamedElement>
-      <referencedType Id="df74e64f-69df-483b-b662-f413c97081c1" name="Polyomino" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::Polyomino">
+      <referencedType Id="b3ca8b2a-6d03-493f-8d21-b50515bd663d" name="Polyomino" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::Polyomino">
         <elementDefinition Id="fffee321-d607-45e4-8a9e-187232fef727" />
       </referencedType>
     </packageHasNamedElement>
     <packageHasNamedElement>
-      <referencedType Id="e56224c3-1fac-44aa-ba1c-487fa22cea67" name="Board" isAbstract="false" isLeaf="false" cachedFullName="Board">
+      <referencedType Id="102a5239-e3e0-4afc-b855-bf0bbdf36789" name="IPiece" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::IPiece">
+        <elementDefinition Id="738cae29-fabb-4b4f-a7de-a4a67b91e515" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="847ca911-7a3a-4578-ae01-9d0f8e0322f2" name="OPiece" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::OPiece">
+        <elementDefinition Id="b64fdd32-f7b4-4b8b-b675-66349b528274" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="d1d42e59-4c24-42be-8922-9f56f87480db" name="LPiece" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::LPiece">
+        <elementDefinition Id="b25ebbff-8c6a-4dc7-a102-f6b727e732e4" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="dc9b8ece-3dcf-4ab7-8224-1bf21d16293a" name="SPiece" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::SPiece">
+        <elementDefinition Id="02c5d5ac-20a9-44e8-b9f7-099ef3b517d9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="fdea46b4-d4d3-4f53-98db-6c12cb5b79e6" name="ZPiece" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::ZPiece">
+        <elementDefinition Id="87888bc4-ac13-485f-bffe-c286db5188d3" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="62c71480-a08c-4406-9928-25b1674fe0fb" name="JPiece" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::JPiece">
+        <elementDefinition Id="5e24197b-b32f-4ee7-bee2-a23587c8d0b2" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="5487e3fe-2c24-4903-a238-47d485f64aaf" name="RotateRightVisitor" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="9c96854f-bd73-487a-a679-bc7a910f2626" />
+        <ownedAttributesInternal>
+          <property Id="df744ee4-8743-4f31-8d35-e1c6955d160b" name="board" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8fc7c964-6bf5-4d2f-98ae-0253516f792b" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="25fcf25b-1d4c-4fda-aca4-e10fe5b2edac" LastKnownName="Board" />
+            </type_NamedElement>
+          </property>
+          <property Id="73c48cab-fca3-43bd-bfcc-cfe170d9ac3c" name="canChange" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7e2983da-845d-4248-add9-0f0d8d4f6773" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="fb8c895e-1e1f-4fe3-b1c2-b28f021d6171" LastKnownName="CanChangeLocalVisitor" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="efef210a-775c-4ca2-bc42-f821969c3651" name="RotateRightCall" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="3bc8b583-93b1-46fb-8bf0-83796654c95d" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="e83c53df-0a29-4972-a9df-999e37e573e4" direction="Return" isUnique="false">
+                  <elementDefinition Id="9a4d60d1-f638-4d47-97f5-f3f9e34fe56e" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="679b86af-733e-4421-8c2b-9e382ff01b20" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="30ae2b9d-b848-4c43-8d25-32202c9312ad" name="poly" direction="In" isUnique="false">
+                  <elementDefinition Id="d049664d-52b3-4ba1-a13c-6059d8e873fd" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="b3ca8b2a-6d03-493f-8d21-b50515bd663d" LastKnownName="Polyomino" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="01e0cb1e-76da-408d-aebd-55066346c7e9" name="IPiece" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2042f3c5-664d-41b3-8358-7ed62770dfc0" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="21a9b5de-cdcd-4f36-ad6f-5cb162ec08f5" direction="Return" isUnique="false">
+                  <elementDefinition Id="b4428978-78ce-49e2-9361-b03e099887cf" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="679b86af-733e-4421-8c2b-9e382ff01b20" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="13d13daf-49bb-4779-bcac-7ef7d057e26e" name="piece" direction="In" isUnique="false">
+                  <elementDefinition Id="0ff7aa10-4604-4840-b1ea-6463a8872dc4" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="102a5239-e3e0-4afc-b855-bf0bbdf36789" LastKnownName="IPiece" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="c3bf9014-1def-4256-9ad7-21219dc33b28" name="RotateRightVisitor" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="dd82830e-6101-48b2-b36e-f5e0dbfe2d1c" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="cb8038d1-8e9a-495a-8184-281bf3ab11c1" name="board" direction="In" isUnique="false">
+                  <elementDefinition Id="a42bbc41-c5f3-44cb-9e7f-f38f0b5d4571" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="b217b582-2fc5-475f-b702-10e9ecabf3c0" LastKnownName="Board" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="611fa49f-c998-4ab6-a24c-63af38b30da6" name="change" direction="In" isUnique="false">
+                  <elementDefinition Id="475dd2b7-b265-4677-8e7b-8f86f2a1a939" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="01ab863a-ab54-4d6d-afe9-8fa85da4cd25" LastKnownName="CanChangeLocalVisitor" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="94d92ea6-61d6-4877-a5ef-462e4c41615f" name="OPiece" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="7a43d36d-5713-4d49-b88f-69bb13c39984" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="d0fc4557-065f-455d-ae05-b79d74b7e0b6" direction="Return" isUnique="false">
+                  <elementDefinition Id="31aaa7c0-f725-4c50-9a90-631929eeb679" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="679b86af-733e-4421-8c2b-9e382ff01b20" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="5dadbadd-124e-47ff-956b-c973bb558d3d" name="piece" direction="In" isUnique="false">
+                  <elementDefinition Id="200216e8-860c-4d5d-8b0d-fdda82289302" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="847ca911-7a3a-4578-ae01-9d0f8e0322f2" LastKnownName="OPiece" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="41a49e1e-7f48-4801-87e9-8944d6db2748" name="LPiece" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f7eed38f-61d9-4903-a62f-33673a9268a8" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="5635c4f6-a26b-42ba-b1aa-39a153f5e899" direction="Return" isUnique="false">
+                  <elementDefinition Id="930534d4-8e10-463e-b9d6-7b68a115e4f4" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="679b86af-733e-4421-8c2b-9e382ff01b20" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="6f306da7-4353-4ad7-974f-814451121eb0" name="piece" direction="In" isUnique="false">
+                  <elementDefinition Id="652bf0de-0219-4871-b61c-2eb888173da0" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="d1d42e59-4c24-42be-8922-9f56f87480db" LastKnownName="LPiece" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="b92cdaea-c11e-4a22-9b1c-13531968cab2" name="SPiece" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0eb3202b-7e1a-487c-be4c-12114efb15ba" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="0e8e1533-0e25-474c-89b1-5cb478e5c9e8" direction="Return" isUnique="false">
+                  <elementDefinition Id="2e8ebc4a-9be7-4b6d-894c-8a430d6292cd" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="679b86af-733e-4421-8c2b-9e382ff01b20" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="d2e75d5b-d695-4337-a3ba-37350cd1d68e" name="piece" direction="In" isUnique="false">
+                  <elementDefinition Id="15b466b8-1e2b-4519-83a7-b5d3dc48bbfc" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="dc9b8ece-3dcf-4ab7-8224-1bf21d16293a" LastKnownName="SPiece" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="f183b37f-a673-437a-bc91-7eb77a3093b9" name="ZPiece" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="6a6ef3b7-32f9-401d-a2c6-70c4e433ef1b" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a380fd47-e7b9-42b9-89cb-19d48203d514" direction="Return" isUnique="false">
+                  <elementDefinition Id="e1a289df-8da5-4dc4-bcf7-ecef6ce734cd" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="679b86af-733e-4421-8c2b-9e382ff01b20" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="2b3f035d-c062-4345-8566-1ff499f472aa" name="piece" direction="In" isUnique="false">
+                  <elementDefinition Id="dbe3a063-7a3e-4dd5-ac95-db985450a72f" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="fdea46b4-d4d3-4f53-98db-6c12cb5b79e6" LastKnownName="ZPiece" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="30985c73-dfd0-44a3-89e8-9bb2864d5dd2" name="JPiece" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="37c10eb6-3e7d-438d-b756-f6abd8f1c7ed" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="8a00bd83-0264-4bcc-afc2-f89c904423d2" name="piece" direction="In" isUnique="false">
+                  <elementDefinition Id="56b02ed8-9dca-4f95-aee4-911bccc8832f" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="62c71480-a08c-4406-9928-25b1674fe0fb" LastKnownName="JPiece" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="9674b023-ea5c-400a-828f-30ddc103e918" direction="Return" isUnique="false">
+                  <elementDefinition Id="788e5a09-bf83-458a-bcbf-a98bccf09106" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="679b86af-733e-4421-8c2b-9e382ff01b20" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="1df87019-bdda-4172-9701-7caae59d4a8e" name="Board" isAbstract="false" isLeaf="false" cachedFullName="Board">
         <elementDefinition Id="669dc5a4-7214-4b7c-b041-179d862639b8" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="d55f607f-8daa-447f-b30b-20e0d574f6a1" name="void" isAbstract="false" isLeaf="false" cachedFullName="void">
+        <elementDefinition Id="7b917738-279c-41a8-9918-ed035d35217f" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="97724aeb-4db6-4e1b-b63d-fe4f04374a96" name="Polyomino" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::Polyomino">
+        <elementDefinition Id="fffee321-d607-45e4-8a9e-187232fef727" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="a0cb7ee7-6f87-4fd8-af4d-e8519b66a59e" name="IPiece" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::IPiece">
+        <elementDefinition Id="738cae29-fabb-4b4f-a7de-a4a67b91e515" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="05facde5-5eb3-4805-9621-c48f19e84f7f" name="OPiece" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::OPiece">
+        <elementDefinition Id="b64fdd32-f7b4-4b8b-b675-66349b528274" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="4122d47c-795e-42dc-9ad4-b447d24ad13e" name="LPiece" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::LPiece">
+        <elementDefinition Id="b25ebbff-8c6a-4dc7-a102-f6b727e732e4" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="980629cf-cfa7-438e-8e53-599fa5077409" name="SPiece" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::SPiece">
+        <elementDefinition Id="02c5d5ac-20a9-44e8-b9f7-099ef3b517d9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="6c64e45c-55eb-440f-b971-8afc8a03ae37" name="ZPiece" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::ZPiece">
+        <elementDefinition Id="87888bc4-ac13-485f-bffe-c286db5188d3" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="d294e55b-5192-4399-b88c-f5b25bf23cf9" name="JPiece" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::JPiece">
+        <elementDefinition Id="5e24197b-b32f-4ee7-bee2-a23587c8d0b2" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="679c953a-532c-4eb6-96a6-2d98eb0a7e67" name="FinalizeOnBoardVisitor" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ea29fedf-324e-496a-90cd-c97cb1ba7ac9" />
+        <ownedAttributesInternal>
+          <property Id="9eb8dae2-2a33-41e6-8024-da0e8ef13b1f" name="board" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e19db2db-1656-4aba-b1f4-096001145f90" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="1df87019-bdda-4172-9701-7caae59d4a8e" LastKnownName="Board" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="d5fa8cff-d500-4c12-9eaa-580902b3ebe3" name="FinalizeOnBoardCall" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="bc9efcdc-bb52-4304-b560-da73182cddae" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="40419da2-6bae-4808-af8a-8a154956bb00" direction="Return" isUnique="false">
+                  <elementDefinition Id="ed76c1b4-be68-4f90-ac0e-d3521410a8d1" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="d55f607f-8daa-447f-b30b-20e0d574f6a1" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a280a7a7-23bf-4dfc-9c3a-e6f55815faaf" name="poly" direction="In" isUnique="false">
+                  <elementDefinition Id="dea8b4fe-9233-4478-98b1-267751f1ad9f" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="97724aeb-4db6-4e1b-b63d-fe4f04374a96" LastKnownName="Polyomino" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="d42a39ef-3f0d-425f-919d-145925aa6ee5" name="IPiece" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="34876203-c682-4fdb-b68d-12a47286d396" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="70362295-d5cd-41f7-b765-d29ed537c29f" direction="Return" isUnique="false">
+                  <elementDefinition Id="caa5eebd-6d48-4222-8fea-9a96c36ffef5" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="d55f607f-8daa-447f-b30b-20e0d574f6a1" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="c27ec080-22c4-475f-a215-d279cdfc2f40" name="piece" direction="In" isUnique="false">
+                  <elementDefinition Id="59a4cb66-b403-4656-acef-bf42c067ff0e" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="a0cb7ee7-6f87-4fd8-af4d-e8519b66a59e" LastKnownName="IPiece" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="58924a0d-0378-4bbf-91f9-047a338a946d" name="FinalizeOnBoardVisitor" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="8e3d722c-5e12-4a5b-af86-3d014acdffe8" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="b88c4a03-6aaf-41e6-b98f-0fe8942afe5c" name="board" direction="In" isUnique="false">
+                  <elementDefinition Id="c153349e-cb05-4bf0-a97d-cbafa37773c5" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="b217b582-2fc5-475f-b702-10e9ecabf3c0" LastKnownName="Board" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="e389b1e9-524b-462a-8d67-e14f7f12942a" name="OPiece" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f263417c-b1eb-4cc0-a9b2-9d2fd6ee9afd" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="dfa6cf82-a9b6-470e-8284-c3a47f60bf57" direction="Return" isUnique="false">
+                  <elementDefinition Id="7bf3fdae-885b-45f9-936f-1db783b529ca" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="d55f607f-8daa-447f-b30b-20e0d574f6a1" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="1d0e9a97-6fb5-4371-b730-1350170d4d87" name="piece" direction="In" isUnique="false">
+                  <elementDefinition Id="3ed18d67-3504-4e3e-b99a-e870c4e76c1d" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="05facde5-5eb3-4805-9621-c48f19e84f7f" LastKnownName="OPiece" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="423eefba-ce91-41bd-9cef-f80bffc45160" name="LPiece" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="54295a9c-b79d-49e1-9c88-5cd81ca244dd" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="122578c4-5ee6-46a1-be63-d12eff4f6358" direction="Return" isUnique="false">
+                  <elementDefinition Id="6f9e25d4-0a34-4022-a5c6-29f638bc9430" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="d55f607f-8daa-447f-b30b-20e0d574f6a1" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a436353d-5641-49a3-9d1e-137101079ff3" name="piece" direction="In" isUnique="false">
+                  <elementDefinition Id="8e4e2a0f-cd20-4a93-a654-c39c632f4211" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4122d47c-795e-42dc-9ad4-b447d24ad13e" LastKnownName="LPiece" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="8342ec1b-adca-4318-b05d-7c64f21c5517" name="SPiece" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="632422d7-70be-4df8-9c52-ef13f0085599" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="6ef0dc2e-7358-49d7-9437-314f3fb47d82" direction="Return" isUnique="false">
+                  <elementDefinition Id="3335e3e7-ec10-4a89-81f8-a722dd262291" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="d55f607f-8daa-447f-b30b-20e0d574f6a1" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="f9f829ff-0e63-4a82-a7f2-d2fc852ba119" name="piece" direction="In" isUnique="false">
+                  <elementDefinition Id="0e2a4f5e-9293-49cb-885f-949af125eaac" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="980629cf-cfa7-438e-8e53-599fa5077409" LastKnownName="SPiece" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="8f7ef13c-2840-4165-8362-c6d4d90baeda" name="ZPiece" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5473bf70-11ff-43da-91b4-cb81aeae33d0" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="d6fecd24-01f6-4c3f-8a34-19ef0146682c" direction="Return" isUnique="false">
+                  <elementDefinition Id="2ad62e04-1628-400a-84a6-4c289277a366" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="d55f607f-8daa-447f-b30b-20e0d574f6a1" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="109a90c9-187e-4da6-81ff-112f1a1b767d" name="piece" direction="In" isUnique="false">
+                  <elementDefinition Id="30565b41-1a23-494d-9775-82f731b2e620" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="6c64e45c-55eb-440f-b971-8afc8a03ae37" LastKnownName="ZPiece" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="46c3110d-a9c4-482a-ad60-80076bd02cb7" name="JPiece" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="18bc6cbb-245a-4654-930b-3d2252512f9e" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a658589d-97ed-43c6-a6af-cf42e0c7a8a2" name="piece" direction="In" isUnique="false">
+                  <elementDefinition Id="b56a5e94-a450-4cdf-a682-04a6008b2d4a" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="d294e55b-5192-4399-b88c-f5b25bf23cf9" LastKnownName="JPiece" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="10a80c7a-c6d4-40db-945c-093003a4661e" direction="Return" isUnique="false">
+                  <elementDefinition Id="0adfcaac-c2b6-4035-8f0d-f959f06c1eaa" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="d55f607f-8daa-447f-b30b-20e0d574f6a1" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="31ae5a9b-f74f-444c-b631-c876c279d078" name="Block" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="9c8fc2a8-98e3-44c7-a541-047145bd2df8" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="abdd3f2a-2d55-4d3e-878e-aa455f997bdb" name="block" direction="In" isUnique="false">
+                  <elementDefinition Id="ec6027ec-7495-466d-a285-0464344cc80d" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="01371ebb-0f9e-4178-bd63-b994f5713a6e" LastKnownName="Block" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="051f6cbe-0e60-4b2b-b607-c436def30559" name="Board" isAbstract="false" isLeaf="false" cachedFullName="Board">
+        <elementDefinition Id="669dc5a4-7214-4b7c-b041-179d862639b8" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="fccf8f7f-e203-41bf-88f0-95b89ffc81ae" name="void" isAbstract="false" isLeaf="false" cachedFullName="void">
+        <elementDefinition Id="7b917738-279c-41a8-9918-ed035d35217f" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="d0db4dc1-a731-4511-8b86-167ceec3225b" name="Polyomino" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::Polyomino">
+        <elementDefinition Id="fffee321-d607-45e4-8a9e-187232fef727" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="55f6a074-a567-4f01-a23f-2b464ed78921" name="IPiece" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::IPiece">
+        <elementDefinition Id="738cae29-fabb-4b4f-a7de-a4a67b91e515" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="d2a37ce3-6747-4d0c-babb-ae61845a221f" name="OPiece" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::OPiece">
+        <elementDefinition Id="b64fdd32-f7b4-4b8b-b675-66349b528274" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="2c604fa7-ea0d-44b6-a899-baf1990572b8" name="LPiece" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::LPiece">
+        <elementDefinition Id="b25ebbff-8c6a-4dc7-a102-f6b727e732e4" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="766b3ef8-3133-40f0-96f9-0f3f6fb2a76b" name="SPiece" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::SPiece">
+        <elementDefinition Id="02c5d5ac-20a9-44e8-b9f7-099ef3b517d9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="112f9de4-1cdf-442c-b41b-03bdf5847e5a" name="ZPiece" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::ZPiece">
+        <elementDefinition Id="87888bc4-ac13-485f-bffe-c286db5188d3" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="a0a07c22-80d4-40a4-9f60-e0e064568b9a" name="JPiece" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::JPiece">
+        <elementDefinition Id="5e24197b-b32f-4ee7-bee2-a23587c8d0b2" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="c572effb-e499-4315-8753-abe208ee41fc" name="Board" isAbstract="false" isLeaf="false" cachedFullName="Board">
+        <elementDefinition Id="669dc5a4-7214-4b7c-b041-179d862639b8" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="a2450e59-0fca-40ba-90b7-352aedcd75f3" name="void" isAbstract="false" isLeaf="false" cachedFullName="void">
+        <elementDefinition Id="7b917738-279c-41a8-9918-ed035d35217f" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="689316cd-ce60-45a5-b3e5-d816159a8133" name="Polyomino" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::Polyomino">
+        <elementDefinition Id="fffee321-d607-45e4-8a9e-187232fef727" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="c5dd77ad-6dde-4123-b097-41a6c2bb06f5" name="IPiece" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::IPiece">
+        <elementDefinition Id="738cae29-fabb-4b4f-a7de-a4a67b91e515" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="11537ce1-80e1-488b-b97b-175756f18f8e" name="OPiece" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::OPiece">
+        <elementDefinition Id="b64fdd32-f7b4-4b8b-b675-66349b528274" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="cc3fe338-4740-47ed-a0e7-265573a5774f" name="LPiece" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::LPiece">
+        <elementDefinition Id="b25ebbff-8c6a-4dc7-a102-f6b727e732e4" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="1f5ec526-ca78-45a0-bd9e-53ada81a732e" name="SPiece" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::SPiece">
+        <elementDefinition Id="02c5d5ac-20a9-44e8-b9f7-099ef3b517d9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="7a53ab1d-e0f3-4563-985c-f11cb8386d39" name="ZPiece" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::ZPiece">
+        <elementDefinition Id="87888bc4-ac13-485f-bffe-c286db5188d3" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="d4eb32ea-738c-4b3f-b81e-3e538e33c27d" name="JPiece" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::JPiece">
+        <elementDefinition Id="5e24197b-b32f-4ee7-bee2-a23587c8d0b2" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="13067c1d-45d6-450f-9947-fabee7ce3a80" name="MoveOnBoardVisitor" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5666c856-218c-4115-a89b-714024822493" />
+        <ownedAttributesInternal>
+          <property Id="3c210b1d-5ccc-4771-997f-2fd773c55ade" name="board" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="85f60ae8-cd14-4674-b0e9-276d971326b0" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="051f6cbe-0e60-4b2b-b607-c436def30559" LastKnownName="Board" />
+            </type_NamedElement>
+          </property>
+          <property Id="1a819f49-e822-46d9-8d27-6df8068874ce" name="canChange" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="7f451a0a-712c-40b8-a575-9dc8bb57f803" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="dcc82189-c33b-47e1-ba16-08a4d97b3f11" LastKnownName="CanChangeLocalVisitor" />
+            </type_NamedElement>
+          </property>
+          <property Id="c1b16795-e0b7-4e78-9437-9c15bf44867b" name="finalize" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="573e43a5-8fac-43e3-aadc-56f2d41dc448" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="bd610c75-187c-4774-9118-0a87bfa538f1" LastKnownName="FinalizeOnBoardVisitor" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="e03a7171-c6c7-4a88-9450-5037b8ae4717" name="MoveOnBoardCall" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d9c1d0f1-7fab-4efe-861a-eb9cf6151fb0" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="478cd297-3b83-4e9a-8598-18e06ea0b457" direction="Return" isUnique="false">
+                  <elementDefinition Id="f90b4f88-1bd8-4c34-99f4-18d5a8294dbe" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="fccf8f7f-e203-41bf-88f0-95b89ffc81ae" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="3104139c-185b-41ca-a475-08357531dd1d" name="poly" direction="In" isUnique="false">
+                  <elementDefinition Id="ab6c4baf-73a0-4ade-ade2-5651e0913e04" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="d0db4dc1-a731-4511-8b86-167ceec3225b" LastKnownName="Polyomino" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="6fd8f68e-9e0b-4223-bb6c-ae97da211089" name="IPiece" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="336e68e0-7ce1-437a-8fb2-d453fc6bffbc" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="00662adb-6dc0-4def-baf9-87468bbd0197" direction="Return" isUnique="false">
+                  <elementDefinition Id="dfb1f0c1-3780-49c9-b6cc-2aba7983e954" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="fccf8f7f-e203-41bf-88f0-95b89ffc81ae" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="34447c6f-a923-4039-a8fe-b2d06cf0d2b0" name="piece" direction="In" isUnique="false">
+                  <elementDefinition Id="a5590627-ddbf-4ac3-9acf-4aafab3a62a0" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="55f6a074-a567-4f01-a23f-2b464ed78921" LastKnownName="IPiece" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="7f3965cd-e2eb-4dec-95fe-1c98736f3501" name="dx" direction="In" isUnique="false">
+                  <elementDefinition Id="73b49da4-f101-492a-9989-c92e536030f4" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="9b74621e-30f9-4b20-917a-ba6f5384f120" LastKnownName="int" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="4f09ce0b-bdc0-416c-866f-18b96f7b7639" name="dy" direction="In" isUnique="false">
+                  <elementDefinition Id="430e6a5c-11de-4557-af9b-d8cf79123e4a" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="9b74621e-30f9-4b20-917a-ba6f5384f120" LastKnownName="int" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="45d38413-d3a0-4e13-a7ba-e450e4260610" name="MoveOnBoardVisitor" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="76a766b8-3daf-45d4-ac10-475ffedf10dd" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="843c45cf-d4d5-4a45-b824-5eef426b1b4e" name="board" direction="In" isUnique="false">
+                  <elementDefinition Id="ec8bac4f-5cde-48c6-a47a-45db179e82b6" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="b217b582-2fc5-475f-b702-10e9ecabf3c0" LastKnownName="Board" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="b58144aa-5f28-42a6-8974-9beb6e9fb2d7" name="change" direction="In" isUnique="false">
+                  <elementDefinition Id="b516443c-55a1-4162-ab51-a6952f94f72b" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="01ab863a-ab54-4d6d-afe9-8fa85da4cd25" LastKnownName="CanChangeLocalVisitor" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="7e493509-5402-4f48-9e3c-773d7734f260" name="final" direction="In" isUnique="false">
+                  <elementDefinition Id="bf4f04e4-1e3d-49db-8f27-8c0add689c0e" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="bd610c75-187c-4774-9118-0a87bfa538f1" LastKnownName="FinalizeOnBoardVisitor" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="3c83a926-6365-4b1c-9fee-9e4bce76192a" name="OPiece" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="efb0e8d4-341c-41e3-9572-eb7a309cb62f" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="7a8978cf-85b4-467f-bc07-19d8f7ec4e28" direction="Return" isUnique="false">
+                  <elementDefinition Id="16d3ce37-47c6-45b2-a11b-723a5777a1a4" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="fccf8f7f-e203-41bf-88f0-95b89ffc81ae" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="b0a1558b-53b2-4038-a113-742e6e88a653" name="piece" direction="In" isUnique="false">
+                  <elementDefinition Id="7d78163b-d837-455f-ad9b-29eb85ba09fd" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="d2a37ce3-6747-4d0c-babb-ae61845a221f" LastKnownName="OPiece" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="556da8a7-4efb-4561-a79d-5f4b4dac3a7d" name="dx" direction="In" isUnique="false">
+                  <elementDefinition Id="f7df7117-b089-49ea-9fdf-74ca6ff89855" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="9b74621e-30f9-4b20-917a-ba6f5384f120" LastKnownName="int" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="ab9e22cf-86cc-47bb-9391-514b9e04f489" name="dy" direction="In" isUnique="false">
+                  <elementDefinition Id="8d0db84e-43b0-49f8-b0ff-8dc54a94779f" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="9b74621e-30f9-4b20-917a-ba6f5384f120" LastKnownName="int" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="8859f289-a413-4fc0-8baa-faa74e4c1d0e" name="LPiece" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="9da673a0-3273-402d-98a4-e5a0e32aef39" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="64bc34b4-0c9c-4505-8d06-94da8359f049" direction="Return" isUnique="false">
+                  <elementDefinition Id="2ba633b1-292a-4dbb-903c-a82dba43d6e1" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="fccf8f7f-e203-41bf-88f0-95b89ffc81ae" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="b3cc1f12-c3b6-4bd5-995b-4156db4f7ac6" name="piece" direction="In" isUnique="false">
+                  <elementDefinition Id="2880117d-aef5-4612-aaf6-a941312e9d9f" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="2c604fa7-ea0d-44b6-a899-baf1990572b8" LastKnownName="LPiece" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="87226ab6-d107-4b97-a96c-e8baed162035" name="dx" direction="In" isUnique="false">
+                  <elementDefinition Id="19965c3f-8cbb-4c8c-a3f6-70dba05a14a4" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="9b74621e-30f9-4b20-917a-ba6f5384f120" LastKnownName="int" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="1147e319-e5cb-49ee-b39f-2b9420d989e8" name="dy" direction="In" isUnique="false">
+                  <elementDefinition Id="221496ee-ae57-4e32-a020-8023cdc47285" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="9b74621e-30f9-4b20-917a-ba6f5384f120" LastKnownName="int" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="6c9c77fd-efb7-454f-8f0f-3795291a8059" name="SPiece" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="dc37211c-ad52-40e4-aa4f-3cab75265bad" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="ff6009e8-362c-496b-8dca-9742e4aae499" direction="Return" isUnique="false">
+                  <elementDefinition Id="c218e369-713f-4d8b-a573-6c52af153d81" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="fccf8f7f-e203-41bf-88f0-95b89ffc81ae" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="212c307f-aabd-46c9-84d9-5be854c59e49" name="piece" direction="In" isUnique="false">
+                  <elementDefinition Id="fe6d6acd-3cc9-4229-8ada-30ed5bd9d5f4" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="766b3ef8-3133-40f0-96f9-0f3f6fb2a76b" LastKnownName="SPiece" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="7c03f017-4ebb-4a84-8fa5-016b5e5620c0" name="dx" direction="In" isUnique="false">
+                  <elementDefinition Id="a7f9f139-8302-454b-8fc6-5e0bd7deda07" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="9b74621e-30f9-4b20-917a-ba6f5384f120" LastKnownName="int" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="ae6ca420-49e5-4036-a257-87360c9b6eae" name="dy" direction="In" isUnique="false">
+                  <elementDefinition Id="2b10720a-f48a-41cc-907c-df7e6866c2d1" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="9b74621e-30f9-4b20-917a-ba6f5384f120" LastKnownName="int" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="1157e0c9-31c9-4b27-b145-cbe1e866facc" name="ZPiece" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5ccd3092-38a6-4049-9842-459e615ed840" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="af51bb50-95cb-49c3-8e66-05efb3d1cbaf" direction="Return" isUnique="false">
+                  <elementDefinition Id="57d0e698-d9d4-44bf-9792-d6d0ebd3a067" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="fccf8f7f-e203-41bf-88f0-95b89ffc81ae" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="2ce93c29-4f48-4dd2-8d5c-585b7339c8f1" name="piece" direction="In" isUnique="false">
+                  <elementDefinition Id="e90fb16a-ea2b-4902-94e3-8671040f6c8f" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="112f9de4-1cdf-442c-b41b-03bdf5847e5a" LastKnownName="ZPiece" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="fb374ade-0ca0-4198-8f37-27160a280705" name="dx" direction="In" isUnique="false">
+                  <elementDefinition Id="36a3a99e-16e8-46d0-b873-c002ede15d39" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="9b74621e-30f9-4b20-917a-ba6f5384f120" LastKnownName="int" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="3d0d7ef1-0d30-4c89-9da1-f6d0420801cf" name="dy" direction="In" isUnique="false">
+                  <elementDefinition Id="f4d6e440-3c3a-4d69-b8ab-cf5f6faed4ac" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="9b74621e-30f9-4b20-917a-ba6f5384f120" LastKnownName="int" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="076254d8-50af-479e-90c8-d6015d3751af" name="JPiece" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="775161a3-c96c-4e3a-be22-fdb48727ef70" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="ffb858d3-6e4f-41d8-b18e-740b0ccb1f34" direction="Return" isUnique="false">
+                  <elementDefinition Id="978cb107-2720-489e-bb98-5eab5aacf750" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="fccf8f7f-e203-41bf-88f0-95b89ffc81ae" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="06f6cc98-ad77-4329-9bd7-8a1ad13f902a" name="piece" direction="In" isUnique="false">
+                  <elementDefinition Id="89acb864-0b99-439d-9bef-fb867a466add" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="a0a07c22-80d4-40a4-9f60-e0e064568b9a" LastKnownName="JPiece" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="e79be2b2-68d7-411d-a015-5710cc2285e1" name="dx" direction="In" isUnique="false">
+                  <elementDefinition Id="a8a59e23-26d1-43c9-9e8b-f8f1a1e6fe0b" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="9b74621e-30f9-4b20-917a-ba6f5384f120" LastKnownName="int" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="1f73d80f-9b8f-41ef-83ac-f1a155cd4bf0" name="dy" direction="In" isUnique="false">
+                  <elementDefinition Id="3eeebc3f-03ab-425c-8379-9f14368f5652" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="9b74621e-30f9-4b20-917a-ba6f5384f120" LastKnownName="int" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="f9a78acf-9a94-4337-9c51-f13b253479d7" name="Block" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a6505e61-8bd4-437d-b300-a7da6751f5b1" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="149691c7-600b-41f0-9594-53a1fe0189d6" name="block" direction="In" isUnique="false">
+                  <elementDefinition Id="a41c8345-db53-4f10-87eb-4c11827e3b4f" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="01371ebb-0f9e-4178-bd63-b994f5713a6e" LastKnownName="Block" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="7019f9c6-b927-44ba-a89d-2b5839d2f034" name="dx" direction="In" isUnique="false">
+                  <elementDefinition Id="d6d9e5ee-161b-4003-80bf-dc2ec2de3dbe" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="9b74621e-30f9-4b20-917a-ba6f5384f120" LastKnownName="int" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="fd9c2bde-0893-46be-95d9-91a1d4b23d74" name="dy" direction="In" isUnique="false">
+                  <elementDefinition Id="114c286d-e18f-4e45-a3ee-f34517773603" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="9b74621e-30f9-4b20-917a-ba6f5384f120" LastKnownName="int" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="b6f951c8-d1d9-4879-b375-5027e6e2f395" direction="Return" isUnique="false">
+                  <elementDefinition Id="56517305-ae2e-4b86-8d38-0e306ed899a7" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="7957d097-1d85-45ba-949d-0017360121c5" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="d381c922-9b98-425a-8fe2-3c77a9244dde" name="MoveOnBoard" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="35f5af38-d8d4-447c-80fc-5b325d75e27b" />
+        <suppliersInternal>
+          <dependency Id="7bbaeb36-4ee1-44a9-a06c-22b82965b42d">
+            <classMoniker Id="13067c1d-45d6-450f-9947-fabee7ce3a80" LastKnownName="MoveOnBoardVisitor" />
+            <elementDefinition Id="a31ebce7-9c3a-467d-b123-0b47f844a17e" />
+          </dependency>
+        </suppliersInternal>
+        <ownedOperations>
+          <operation Id="73eb5fd2-634c-49d5-8063-60481b1467b5" name="MoveOnBoardAccept" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0841b4fd-ae09-4613-b27d-dc62989cc9be" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="618a3d63-2f68-46b9-adb4-9cda4e7c8482" name="visitor" direction="In" isUnique="false">
+                  <elementDefinition Id="8ec5c3b1-b9a4-4aa7-a49f-88774e775b30" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="f236ea2d-79e4-4ed6-a210-1b3ed4aeeb09" LastKnownName="MoveOnBoardVisitor" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="c10f2eae-f1cd-42ed-8863-8a6a69e1de06" name="dx" direction="In" isUnique="false">
+                  <elementDefinition Id="3536bdf9-dc2b-42d1-ac14-4f60a8c0f3bd" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="9b74621e-30f9-4b20-917a-ba6f5384f120" LastKnownName="int" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="eb88dc31-6114-405c-a59b-e49c348670b7" name="dy" direction="In" isUnique="false">
+                  <elementDefinition Id="9b276325-511c-49ba-96af-e76e5dc86960" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="9b74621e-30f9-4b20-917a-ba6f5384f120" LastKnownName="int" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="4a00c8dd-4094-4411-b1e4-9053c44eeea9" name="MoveContineous" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b122120a-3484-44ad-a9da-73c51618e16e" />
+        <suppliersInternal>
+          <dependency Id="8ab8ec9f-fa21-44f2-b165-7fa6a6f9b70e">
+            <classMoniker Id="c2c48e76-ab5e-4dbf-8620-ae6775ecc3b3" LastKnownName="MoveContineousVisitor" />
+            <elementDefinition Id="3b75a527-1872-411e-a9a6-ae53ff30fd6f" />
+          </dependency>
+        </suppliersInternal>
+        <ownedOperations>
+          <operation Id="a68c5276-f2a6-4b48-aa81-3a3c5e2c90c9" name="MoveContineousAccept" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2da27f75-3aa2-405c-85bd-957db424c9a0" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="e1201a07-6cc0-4db0-b4ef-1f45c4978630" name="visitor" direction="In" isUnique="false">
+                  <elementDefinition Id="e880255f-d13a-4338-ae37-e92909124377" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="168a9afd-9477-4914-b4d7-339048c048b2" LastKnownName="RotateRightVisitor" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c2c48e76-ab5e-4dbf-8620-ae6775ecc3b3" name="MoveContineousVisitor" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e44a9e66-ced0-4924-8492-5a262d0e875b" />
+        <ownedAttributesInternal>
+          <property Id="ee78ea58-744a-4e6e-b3a3-eab91cd508d2" name="board" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="41726593-6f33-45bc-ac64-3e846fbf5a53" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="c572effb-e499-4315-8753-abe208ee41fc" LastKnownName="Board" />
+            </type_NamedElement>
+          </property>
+          <property Id="ff571383-9eca-4354-97dd-75b666b3a216" name="mbVisitor" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="0bc6cdc6-4db3-483f-83ae-3438d63467aa" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="a8f4b2b2-afbd-4ea7-882e-49a0dfbf96b2" LastKnownName="MoveOnBoardVisitor" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="6905e47d-ddc1-4114-90fc-77b1290eda4d" name="MoveContineousCall" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="efe9aa06-786a-46be-8a7f-8921630b3a6e" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a26f62f8-873e-4329-93fd-f860fc76a13e" direction="Return" isUnique="false">
+                  <elementDefinition Id="9090e0dd-f6bb-4d1a-8425-c68be7abf6ef" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="a2450e59-0fca-40ba-90b7-352aedcd75f3" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="32663840-fee9-49bc-96c8-af24e21cbb0c" name="poly" direction="In" isUnique="false">
+                  <elementDefinition Id="1c1abfad-273b-48ad-ac63-ca320cc8c3b7" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="689316cd-ce60-45a5-b3e5-d816159a8133" LastKnownName="Polyomino" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="631088ca-86f0-4d00-9ba3-c06f32acd2d6" name="IPiece" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0d134204-4e85-4c82-8c48-66fe5a5b4195" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="b943afbd-103b-4af2-90c8-b50a2a445373" direction="Return" isUnique="false">
+                  <elementDefinition Id="07fd622c-d818-41e3-9a35-54856c56e17c" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="a2450e59-0fca-40ba-90b7-352aedcd75f3" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="e1225300-4382-4515-b8fe-0ae3bfd63159" name="piece" direction="In" isUnique="false">
+                  <elementDefinition Id="aac7e4ff-0fc1-41e6-8ddf-daaf0caaa5fa" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="c5dd77ad-6dde-4123-b097-41a6c2bb06f5" LastKnownName="IPiece" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="a08b4780-ec4c-4ed9-a3ed-2862d305bd89" name="MoveContineousVisitor" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="cf895a22-1973-481d-b429-88d6d038078f" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="1e7c4a48-ea10-4fa1-896b-663a630d6dfd" name="board" direction="In" isUnique="false">
+                  <elementDefinition Id="b8569cd2-1ccb-4273-a3df-95a432c70f1e" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="b217b582-2fc5-475f-b702-10e9ecabf3c0" LastKnownName="Board" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="be22136b-9549-4346-9acb-b5a7a0cef6b4" name="mV" direction="In" isUnique="false">
+                  <elementDefinition Id="c85240ce-738f-4fd7-82c1-dab9bd507363" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="f236ea2d-79e4-4ed6-a210-1b3ed4aeeb09" LastKnownName="MoveOnBoardVisitor" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="66e9f355-a46a-4051-baba-ac21068b8048" name="OPiece" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e796be15-270f-4162-ae34-f47bb9227cf1" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="132da8cb-8483-47ba-989f-39b7b8661dc8" direction="Return" isUnique="false">
+                  <elementDefinition Id="ac2e393e-e24b-4295-8e32-2ddef67004ea" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="a2450e59-0fca-40ba-90b7-352aedcd75f3" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="73184cca-e0de-4f00-90e9-c3405a7806be" name="piece" direction="In" isUnique="false">
+                  <elementDefinition Id="5d5f83bc-d0f2-4181-995e-867914c344ee" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="11537ce1-80e1-488b-b97b-175756f18f8e" LastKnownName="OPiece" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="0c8e6f5c-fa69-4869-96b9-f5b2750f86d3" name="LPiece" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f536cb4f-4a98-4aae-aa5e-c2e4b907e225" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="924d8d01-404f-4404-88ce-5774ffd0cde7" direction="Return" isUnique="false">
+                  <elementDefinition Id="093fc451-14a0-4b45-afa8-b5d0583e57f9" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="a2450e59-0fca-40ba-90b7-352aedcd75f3" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="8b993fd4-5641-44b0-93e7-63a4c1e8e6f5" name="piece" direction="In" isUnique="false">
+                  <elementDefinition Id="5e68016c-f26f-4cdb-867a-cb0bf1a0b7e0" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="cc3fe338-4740-47ed-a0e7-265573a5774f" LastKnownName="LPiece" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="2f550dea-1138-403d-9a50-8aa032a1e5cf" name="SPiece" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="df244ab2-9ae6-4d97-9231-7b0fd2a3e3f6" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="b35e206b-a53e-41d2-95a1-6616a7be048d" direction="Return" isUnique="false">
+                  <elementDefinition Id="99c45b04-8654-4a21-ae01-9c19377e41a0" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="a2450e59-0fca-40ba-90b7-352aedcd75f3" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="467f36a2-3597-415f-be93-b01c3473aede" name="piece" direction="In" isUnique="false">
+                  <elementDefinition Id="e8dc23ff-41b8-43c5-82e3-704bf3f880dc" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="1f5ec526-ca78-45a0-bd9e-53ada81a732e" LastKnownName="SPiece" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="23b9decb-2651-4f13-93ed-0bcee77f211f" name="ZPiece" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="144a8a38-2a9f-452e-9587-a82a0d14936e" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="f9c2c427-f34d-4154-9987-6281325f40f3" direction="Return" isUnique="false">
+                  <elementDefinition Id="76329b58-7b15-4d74-8e53-23641030593c" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="a2450e59-0fca-40ba-90b7-352aedcd75f3" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="f6125f3e-61f8-485f-816e-4ac5d4d55488" name="piece" direction="In" isUnique="false">
+                  <elementDefinition Id="7f0e2a6a-3dce-4374-84bf-239219dc775d" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="7a53ab1d-e0f3-4563-985c-f11cb8386d39" LastKnownName="ZPiece" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="15ca7a34-b6bd-42ef-80f7-2740cdd14a7b" name="JPiece" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0f28fbd7-7672-4eb8-b898-a683083d93b6" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="e2cb93a8-7a7d-4f44-8a3f-65bee291e067" name="piece" direction="In" isUnique="false">
+                  <elementDefinition Id="cd1552e8-3d9c-464a-91c7-87c6e0fa0ba3" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="d4eb32ea-738c-4b3f-b81e-3e538e33c27d" LastKnownName="JPiece" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="4c721077-7a41-4371-982b-3ba087260ec7" direction="Return" isUnique="false">
+                  <elementDefinition Id="3c6dd296-fe2c-4069-8354-bc4af4da466d" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="a2450e59-0fca-40ba-90b7-352aedcd75f3" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="c99f0190-08df-4940-872c-e391f659675a" name="Block" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="7dd4ff2e-59aa-4f14-9f1d-396ae0631d22" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="81b23382-53f3-4574-8f8d-b7f14ffc62bb" name="block" direction="In" isUnique="false">
+                  <elementDefinition Id="424e92b5-748b-423b-881b-f12420a7ff91" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="01371ebb-0f9e-4178-bd63-b994f5713a6e" LastKnownName="Block" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="7c2bbe0b-761d-4cf2-a7cb-aa0bb9d29540" name="dx" direction="In" isUnique="false">
+                  <elementDefinition Id="cc42652d-c62e-4709-a678-7b5e6adac93b" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="9b74621e-30f9-4b20-917a-ba6f5384f120" LastKnownName="int" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="38f6a175-87b2-4b8c-b66c-e444d2c28984" name="dy" direction="In" isUnique="false">
+                  <elementDefinition Id="10a2b2c4-d880-4a5d-aea5-e761c79c777b" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="9b74621e-30f9-4b20-917a-ba6f5384f120" LastKnownName="int" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="b8dbdd44-9756-4b8f-ab2f-09ff72d76c71" direction="Return" isUnique="false">
+                  <elementDefinition Id="99980b2c-a1b8-4c41-afbd-ca463d96b2cf" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="7957d097-1d85-45ba-949d-0017360121c5" LastKnownName="void" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="f236ea2d-79e4-4ed6-a210-1b3ed4aeeb09" name="MoveOnBoardVisitor" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::MoveOnBoardVisitor">
+        <elementDefinition Id="5666c856-218c-4115-a89b-714024822493" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="dee7680e-afa3-4643-9fe9-27ce281208e6" name="Board" isAbstract="false" isLeaf="false" cachedFullName="Board">
+        <elementDefinition Id="669dc5a4-7214-4b7c-b041-179d862639b8" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="6c2f5832-c56a-42c5-8823-fa8085a9e5d2" name="Polyomino" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::Polyomino">
+        <elementDefinition Id="fffee321-d607-45e4-8a9e-187232fef727" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="cacb84c7-b062-47e5-bab8-337d3028cd66" name="IPiece" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::IPiece">
+        <elementDefinition Id="738cae29-fabb-4b4f-a7de-a4a67b91e515" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="45057783-7c36-4422-96b3-57c4c5106987" name="Board" isAbstract="false" isLeaf="false" cachedFullName="Board">
+        <elementDefinition Id="669dc5a4-7214-4b7c-b041-179d862639b8" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="ef0bb61c-f59a-496a-97f5-46bfe6af8adc" name="OPiece" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::OPiece">
+        <elementDefinition Id="b64fdd32-f7b4-4b8b-b675-66349b528274" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="b1e79fac-dc05-4b6c-9f15-ea4715ef75db" name="LPiece" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::LPiece">
+        <elementDefinition Id="b25ebbff-8c6a-4dc7-a102-f6b727e732e4" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="1fe040bf-7417-4289-8a58-645534bf9c0b" name="SPiece" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::SPiece">
+        <elementDefinition Id="02c5d5ac-20a9-44e8-b9f7-099ef3b517d9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="6d04a6f1-5629-41d6-8972-e5cb7e6e08ed" name="ZPiece" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::ZPiece">
+        <elementDefinition Id="87888bc4-ac13-485f-bffe-c286db5188d3" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="280f6130-f6c6-4a8c-ba42-ccf1cdef6bd5" name="JPiece" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::JPiece">
+        <elementDefinition Id="5e24197b-b32f-4ee7-bee2-a23587c8d0b2" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="fcb189c7-cb41-4562-8a7f-d28c91ccb4a1" name="CanChangeLocal" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c5da5b2c-584b-4ba3-8ff0-e30387ebfd6f" />
+        <suppliersInternal>
+          <dependency Id="7025e317-5e02-4565-97e4-df3c96f1e889">
+            <classMoniker Id="bfb788c4-10d0-4214-bfab-2678e57422b2" LastKnownName="CanChangeLocalVisitor" />
+            <elementDefinition Id="e5df0d4c-3075-4a37-8a00-2080a8c6079c" />
+          </dependency>
+        </suppliersInternal>
+        <ownedOperations>
+          <operation Id="363530bd-fbcf-44d6-8ee0-f4d9d750ca46" name="CanChangeLocalAccept" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="19cccdf4-055e-41f5-86df-f8010baf20a8" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="24607a15-8ea2-472b-8664-659836048540" direction="Return" isUnique="false">
+                  <elementDefinition Id="7ba576aa-040e-40e6-a606-33108fad8c6d" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4b5ba644-0580-4d1d-a23f-5507c32a2cfc" LastKnownName="bool" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="07bd45ce-ee8b-48c2-a2c1-43dbf43d98ff" name="visitor" direction="In" isUnique="false">
+                  <elementDefinition Id="c1873c7e-b281-4db9-ad0c-b6eb4a108d83" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="01ab863a-ab54-4d6d-afe9-8fa85da4cd25" LastKnownName="CanChangeLocalVisitor" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="681b69c2-6ec0-4f3d-9357-f99587d7090a" name="State" direction="In" isUnique="false">
+                  <elementDefinition Id="5603afbd-e2f0-40bc-a90f-c0d4477f237c" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="9b74621e-30f9-4b20-917a-ba6f5384f120" LastKnownName="int" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="d4417c2d-15f3-4a2e-b51f-904e6dd247c4" name="x" direction="In" isUnique="false">
+                  <elementDefinition Id="77b6ab37-be32-48e5-b44a-1be7736651f2" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="9b74621e-30f9-4b20-917a-ba6f5384f120" LastKnownName="int" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="0abb5aef-2e03-4606-8400-54d844bf2fe9" name="y" direction="In" isUnique="false">
+                  <elementDefinition Id="69eacb26-32dd-4887-9903-2ce4f3276e19" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="9b74621e-30f9-4b20-917a-ba6f5384f120" LastKnownName="int" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="bfb788c4-10d0-4214-bfab-2678e57422b2" name="CanChangeLocalVisitor" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="2082a9fa-cbfc-49de-a04b-3d4f8f227cfa" />
+        <ownedAttributesInternal>
+          <property Id="7c100a59-92d8-460c-841d-9445ecfcfd93" name="board" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c0157f70-2b61-4754-a2c4-3e5b4181c231" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="dee7680e-afa3-4643-9fe9-27ce281208e6" LastKnownName="Board" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="0dd7b0df-3a40-4cbf-ae94-a64f18038b95" name="CanMoveOnBoardCall" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d586ee64-2933-4ee1-9300-1cbf482cf945" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="63f1b9f7-86a7-4019-bd33-a0c06eb3d81e" direction="Return" isUnique="false">
+                  <elementDefinition Id="7565e1c3-44ad-4e3f-a157-df05939a7e1c" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4b5ba644-0580-4d1d-a23f-5507c32a2cfc" LastKnownName="bool" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="8e1e257a-7def-40a9-a1f1-9b7a7bd8f0cf" name="poly" direction="In" isUnique="false">
+                  <elementDefinition Id="18e41fd7-b3f3-438d-a91e-23a10bd9a58a" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="6c2f5832-c56a-42c5-8823-fa8085a9e5d2" LastKnownName="Polyomino" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="5e8b8c9c-0382-4a7b-9eaf-9b00f9339a68" name="int" direction="In" isUnique="false">
+                  <elementDefinition Id="d3084ff1-6f16-4049-b7dd-6639095caffd" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="d6e20dff-d5d6-42d2-b481-ab0851274743" LastKnownName="state" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="6f5443ba-6477-4960-a6d6-4411c36caca2" name="int x" direction="In" isUnique="false">
+                  <elementDefinition Id="704d7ada-30a7-4546-85b6-ea4e3c3fbc30" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="cb370b8e-921d-45da-bcdd-c406c771d80c" name="int y" direction="In" isUnique="false">
+                  <elementDefinition Id="93c71011-ee20-4b31-a32b-ee9a36bb9e95" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="4e2000d6-f23c-4493-bb9e-fe621458db00" name="IPiece" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="10dcd7f7-dbbd-4ce6-a9ed-ea6a6bad3563" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="36600a4c-c210-488e-aca4-6efc24ea7528" direction="Return" isUnique="false">
+                  <elementDefinition Id="a5d00f7f-e217-4075-9a97-ab7bf589cf13" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4b5ba644-0580-4d1d-a23f-5507c32a2cfc" LastKnownName="bool" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="d53d8337-9429-458a-84c4-2975fcd5f7a5" name="piece" direction="In" isUnique="false">
+                  <elementDefinition Id="e0fae346-bf38-4168-9817-532cbbdfc99d" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="cacb84c7-b062-47e5-bab8-337d3028cd66" LastKnownName="IPiece" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="1e05fdde-c1b8-4506-848b-cb785337add0" name="int state" direction="In" isUnique="false">
+                  <elementDefinition Id="4466fd37-94f4-4fc3-83fb-5f4ac1fd8ca9" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="088cecd6-0779-4471-92e2-7f61cd978cf6" name="int x" direction="In" isUnique="false">
+                  <elementDefinition Id="79efa260-0bbe-47af-ac91-eae7cccc82bc" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="bddc5c57-f2d0-4ec3-9bbf-c912434541b2" name="int y" direction="In" isUnique="false">
+                  <elementDefinition Id="755fb902-d828-483a-bd2c-6366506fbaf9" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="6f0423bd-c0a8-43ab-95ad-b4d01f3de272" name="CanMoveOnBoardVisitor" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="66b4e0f3-12a2-45b9-ac12-ba48ba2ec4fa" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="b589dae7-33e5-4bf6-801b-4dc606e50d81" name="board" direction="In" isUnique="false">
+                  <elementDefinition Id="0916242f-539c-48d2-970d-e72f6f88f0f8" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="45057783-7c36-4422-96b3-57c4c5106987" LastKnownName="Board" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="12d1a0c8-e31a-4f6b-9fe4-b43f09670a16" name="OPiece" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b4e1c095-ad52-41f5-9802-f04adefbfcb2" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a69b8e67-3e9a-4a9d-bca2-b729aa0306c9" direction="Return" isUnique="false">
+                  <elementDefinition Id="3ddbefc4-b597-428d-ae53-e1843df3f0a8" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4b5ba644-0580-4d1d-a23f-5507c32a2cfc" LastKnownName="bool" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="f4b889f6-5527-4bb3-9f4d-25c24cdf5ed9" name="piece" direction="In" isUnique="false">
+                  <elementDefinition Id="6c7f4f34-b286-49eb-b623-38a9f24f37d6" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="ef0bb61c-f59a-496a-97f5-46bfe6af8adc" LastKnownName="OPiece" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="c9b9e461-302c-46d4-83f5-91be3fba46ce" name="int state" direction="In" isUnique="false">
+                  <elementDefinition Id="0ac698fd-bf8a-4f3e-af57-a7bf02d253a8" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="04f4d908-7f85-4fcd-981d-d0743462f6ff" name="int x" direction="In" isUnique="false">
+                  <elementDefinition Id="e7ba8f02-6c7a-4136-8350-2654139473b0" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="18ff12dd-8dd1-4448-a9dc-9264dafb23ab" name="int y" direction="In" isUnique="false">
+                  <elementDefinition Id="524468b3-9193-4530-8bf2-5aca83cc9c1b" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="a63ab388-1837-4099-aed3-0e4f8fcbccc2" name="LPiece" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b6119c83-0088-4ddc-b60c-21c56e739347" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="9937a933-1c08-4cfe-a4bd-5327ec4f11b2" direction="Return" isUnique="false">
+                  <elementDefinition Id="98097405-9a31-4905-ba2f-8c0c4eb70398" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4b5ba644-0580-4d1d-a23f-5507c32a2cfc" LastKnownName="bool" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="3cd89b1a-66f5-4ded-8037-4776878b751a" name="piece" direction="In" isUnique="false">
+                  <elementDefinition Id="06ebec81-6e2d-4358-be5e-427b61ea5164" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="b1e79fac-dc05-4b6c-9f15-ea4715ef75db" LastKnownName="LPiece" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="cd95bc78-1ea5-4a4a-a619-29f57767d65f" name="int state" direction="In" isUnique="false">
+                  <elementDefinition Id="99bf6e0e-11c9-4b78-905b-fc4c538aaa05" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="f1ff7403-be0f-4478-98c3-6bbfd5aac1e5" name="int x" direction="In" isUnique="false">
+                  <elementDefinition Id="cfe5e057-516d-40a2-ae36-e6557038ea07" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="223cf90f-1c49-40d3-b4e4-58361ad4cab3" name="int y" direction="In" isUnique="false">
+                  <elementDefinition Id="cbfa7ba3-d26e-4566-8912-47d898bfa84c" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="63893638-3535-4313-96c7-6c90cb0ce28a" name="SPiece" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="005a06a0-d712-4057-a38c-3dd98ad98df0" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="83776cc8-5ffe-4fc5-98f1-6b30601a2312" direction="Return" isUnique="false">
+                  <elementDefinition Id="ac287985-2ef9-426c-b1ad-5558ea14c691" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4b5ba644-0580-4d1d-a23f-5507c32a2cfc" LastKnownName="bool" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="baddcc13-0cdd-4df4-be38-f14ed9358d13" name="piece" direction="In" isUnique="false">
+                  <elementDefinition Id="12f043e8-fb9a-4bc9-99c8-dd60dba9289c" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="1fe040bf-7417-4289-8a58-645534bf9c0b" LastKnownName="SPiece" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="0e27eb82-d1cd-45c2-8131-0d964f79ce5f" name="int state" direction="In" isUnique="false">
+                  <elementDefinition Id="9507bfed-db58-40b1-b12b-5c0abf2ea4c5" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="24756c22-28a4-43f4-b87b-8d277fedf53b" name="int x" direction="In" isUnique="false">
+                  <elementDefinition Id="f22899e5-02f7-41d5-b516-80c64d35e79f" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="59695fa8-9b89-433c-adb6-176f3145f752" name="int y" direction="In" isUnique="false">
+                  <elementDefinition Id="eaf7fa40-416b-4da5-a60e-bdf5871f43a5" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="bba614ac-cf3e-4b3c-ba5e-e412f3511c1a" name="ZPiece" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="7cc5c8a8-3504-4e43-b129-1aa01688a891" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="bea69a57-dba0-4006-82d4-1156098d4083" direction="Return" isUnique="false">
+                  <elementDefinition Id="5e347013-1fa6-43ab-86ee-3c763ba99d98" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4b5ba644-0580-4d1d-a23f-5507c32a2cfc" LastKnownName="bool" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="de8b9139-8358-4d79-97c0-4e8a4ff92a12" name="piece" direction="In" isUnique="false">
+                  <elementDefinition Id="479252a5-d03a-45e3-b5c3-5831272f9b88" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="6d04a6f1-5629-41d6-8972-e5cb7e6e08ed" LastKnownName="ZPiece" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="50252236-d61a-433b-86c8-22c466c0ddbb" name="int state" direction="In" isUnique="false">
+                  <elementDefinition Id="7bfd8c0b-771f-4abf-a4e2-0d405919a73b" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="77bb246e-f60e-4cf0-99dc-25376e530342" name="int x" direction="In" isUnique="false">
+                  <elementDefinition Id="0c45c99a-acc9-427b-8a14-934d60eaac7a" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="a103f5d5-3217-463d-99a3-b25d6932cddb" name="int y" direction="In" isUnique="false">
+                  <elementDefinition Id="8a99d6e0-7392-47e0-a344-6ae69503d427" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="53ea34d9-f4fa-40ec-9562-74834cc11013" name="JPiece" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e11bf046-b986-4f54-b08d-5af6f9fd5673" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="6849fc5b-0fc1-46a9-8b8a-1fa58c4110a8" direction="Return" isUnique="false">
+                  <elementDefinition Id="961df976-dfac-44b0-97aa-15ac6b76b14f" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4b5ba644-0580-4d1d-a23f-5507c32a2cfc" LastKnownName="bool" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="e649c312-ff25-47e4-9fb6-57808c19b2a3" name="piece" direction="In" isUnique="false">
+                  <elementDefinition Id="6678a9e3-da9c-4568-9b0b-49a60f24de9b" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="280f6130-f6c6-4a8c-ba42-ccf1cdef6bd5" LastKnownName="JPiece" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="0034e9bd-facc-4b5e-bbe4-2beaeb96c842" name="int state" direction="In" isUnique="false">
+                  <elementDefinition Id="cb929210-d339-49d0-a199-5d500cdc7c0f" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="f063142b-1d09-4185-9a95-891329bf5e51" name="int x" direction="In" isUnique="false">
+                  <elementDefinition Id="1af3fea4-7e8e-4a1b-b56b-f885a378531d" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="dd981354-60c9-4c36-8ca0-517322417a38" name="int y" direction="In" isUnique="false">
+                  <elementDefinition Id="f640b420-05ba-44f4-ac17-d6ba93f41a07" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="202d6176-d56f-420a-9d8f-760907eedbf7" name="Block" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="19530f33-3386-48c2-86fe-252df2fb7fc8" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="27b6038d-e6e7-40d3-b115-f4af9369aa5e" name="block" direction="In" isUnique="false">
+                  <elementDefinition Id="730c7163-9cd5-4d4c-ad64-12ef15eda212" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="01371ebb-0f9e-4178-bd63-b994f5713a6e" LastKnownName="Block" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="beb52938-6dc8-49a0-aac3-69f0e91f211b" name="int x" direction="In" isUnique="false">
+                  <elementDefinition Id="b48e142b-bdc4-4ee6-856a-149cd263a488" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="ba3c18eb-8d29-4886-8278-044d8102af0c" name="int y" direction="In" isUnique="false">
+                  <elementDefinition Id="ac965b4b-cbd3-495c-96bb-ef7bfde2a9eb" />
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="98fccc0e-aec7-497d-9e4c-5546ab53e4d9" direction="Return" isUnique="false">
+                  <elementDefinition Id="b385521b-fa2c-4c4c-8a34-0f7b42a47f32" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="4b5ba644-0580-4d1d-a23f-5507c32a2cfc" LastKnownName="bool" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="4b5ba644-0580-4d1d-a23f-5507c32a2cfc" name="bool" isAbstract="false" isLeaf="false" cachedFullName="bool">
+        <elementDefinition Id="05d4e773-d39c-4f93-ae7b-0ff2ed08b1e7" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="01ab863a-ab54-4d6d-afe9-8fa85da4cd25" name="CanChangeLocalVisitor" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::CanChangeLocalVisitor">
+        <elementDefinition Id="2082a9fa-cbfc-49de-a04b-3d4f8f227cfa" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="d6e20dff-d5d6-42d2-b481-ab0851274743" name="state" isAbstract="false" isLeaf="false" cachedFullName="state">
+        <elementDefinition Id="cd25dcfb-09d1-404a-a9c0-745d82333c32" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="9b74621e-30f9-4b20-917a-ba6f5384f120" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
+        <elementDefinition Id="55fd46bf-27a3-4946-b9e4-d5f67681eddf" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="dcc82189-c33b-47e1-ba16-08a4d97b3f11" name="CanChangeLocalVisitor" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::CanChangeLocalVisitor">
+        <elementDefinition Id="2082a9fa-cbfc-49de-a04b-3d4f8f227cfa" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="bd610c75-187c-4774-9118-0a87bfa538f1" name="FinalizeOnBoardVisitor" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::FinalizeOnBoardVisitor">
+        <elementDefinition Id="ea29fedf-324e-496a-90cd-c97cb1ba7ac9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="fb8c895e-1e1f-4fe3-b1c2-b28f021d6171" name="CanChangeLocalVisitor" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::CanChangeLocalVisitor">
+        <elementDefinition Id="2082a9fa-cbfc-49de-a04b-3d4f8f227cfa" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="01371ebb-0f9e-4178-bd63-b994f5713a6e" name="Block" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::Block">
+        <elementDefinition Id="3d9d4b33-f56a-455a-b88e-4816096e35df" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="a8f4b2b2-afbd-4ea7-882e-49a0dfbf96b2" name="MoveOnBoardVisitor" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::MoveOnBoardVisitor">
+        <elementDefinition Id="5666c856-218c-4115-a89b-714024822493" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="168a9afd-9477-4914-b4d7-339048c048b2" name="RotateRightVisitor" isAbstract="false" isLeaf="false" cachedFullName="ModelingProject1::RotateRightVisitor">
+        <elementDefinition Id="9c96854f-bd73-487a-a679-bc7a910f2626" />
       </referencedType>
     </packageHasNamedElement>
   </packagedElements>
   <package Id="7c384dd1-df15-44c8-a626-5d320a24f4a8" name="ModelingProject1">
     <elementDefinition Id="8c75b22c-645e-42c9-b919-f7081da536d3" />
+    <profileInstances>
+      <packageHasProfileInstances Id="eee380c7-3d60-4001-91a1-ab744e3a808f">
+        <profileInstance Id="7ff60e0a-410f-4ba6-aa78-19229795065b" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="a689b945-ddee-4765-93b8-c8caad91b67e">
+        <profileInstance Id="5c6c7cbc-9f6b-4151-b2b2-b4529c8a58f0" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </logicalClassDesignerModel>

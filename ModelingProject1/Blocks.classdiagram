@@ -194,9 +194,6 @@
           </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
-          <operation Id="95f0d4b6-1b8e-4e90-a347-8d381b5ea5ed" name="GetPieceType" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="467dafac-1f9c-4677-9ac1-c2ce5e484d1c" />
-          </operation>
           <operation Id="1ffa0c63-4859-41e7-95e9-4f606487a026" name="Draw" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="dd191076-186b-46b5-a4b0-66f089b02738" />
           </operation>
