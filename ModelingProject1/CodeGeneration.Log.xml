@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/PROGRAM FILES (X86)/MICROSOFT VISUAL STUDIO 14.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/ARCHITECTURE TOOLS/EXTENSIBILITY/Logging/CodeGenLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log" Label="Code Generation/Text Transformation Log">
+  <MessageClass Name="Message" Label="Message" Option="Show informational messages" />
+  <MessageClass Name="Warning" Label="Warning" Option="Show warnings" />
+  <MessageClass Name="Error" Label="Error" Option="Show errors" />
+  <MessageClass Name="Property" Label="Property" Option="Show metadata" />
+  <MessageClass Name="Diagnostic" Label="Message" Option="Show diagnostic messages" />
+  <Message Timestamp="2015-08-27T22:29:51" Importance="High" Text="Code generation or text transformation started." />
+  <Message Timestamp="2015-08-27T22:29:51" Importance="Diagnostic" Text="Name = ClassTemplate" />
+  <Message Timestamp="2015-08-27T22:29:51" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2015-08-27T22:29:51" Importance="Diagnostic" Text="ProjectPath = ..\ModelingProject1Lib\ModelingProject1Lib.csproj" />
+  <Message Timestamp="2015-08-27T22:29:51" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2015-08-27T22:29:51" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2015-08-27T22:29:51" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2015-08-27T22:29:51" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2015-08-27T22:29:51" Importance="Medium" Text="Tetris_testbed's Text Template Binding: 'ClassTemplate' will apply ClassTemplate.t4 to: 'Tetris_testbed::Block' -  (Class), 'Tetris_testbed::Polyomino' -  (Class), 'Tetris_testbed::TetrisModel' -  (Class), 'Tetris_testbed::TetrisViewer' -  (Class), 'Tetris_testbed::board' -  (Class), 'Tetris_testbed::Polyomino' -  (Class), 'Tetris_testbed::OPiece' -  (Class), 'Tetris_testbed::PolynominoFactory' -  (Class), 'Tetris_testbed::IPiece' -  (Class), 'Tetris_testbed::SPiece' -  (Class), 'Tetris_testbed::ZPiece' -  (Class), 'Tetris_testbed::TPiece' -  (Class), 'Tetris_testbed::JPiece' -  (Class), 'Tetris_testbed::LPiece' -  (Class), 'Tetris_testbed::Class1' -  (Class), 'Tetris_testbed::RotateLeft' -  (Class), 'Tetris_testbed::RotateRight' -  (Class), 'Tetris_testbed::RotateLeftVisitor' -  (Class), 'Tetris_testbed::RotateRight1' -  (Class), 'Tetris_testbed::RotateRightVisitor' -  (Class), 'Tetris_testbed::FinalizeOnBoardVisitor' -  (Class), 'Tetris_testbed::MoveOnBoardVisitor' -  (Class), 'Tetris_testbed::MoveContineousVisitor' -  (Class), 'Tetris_testbed::CanChangeLocalVisitor' -  (Class) " />
+  <Message Timestamp="2015-08-27T22:29:52" Importance="Medium" Text="Project Added: C:\Users\Arjun\OneDrive\git-tetris\ModelingProject1Lib\ModelingProject1Lib.csproj" />
+  <Message Timestamp="2015-08-27T22:29:52" Importance="Medium" Text="'Tetris_testbed::Block' -  (Class) : success (file replaced) - C:\Users\Arjun\OneDrive\git-tetris\ModelingProject1Lib\GeneratedCode\Block.cs" />
+  <Message Timestamp="2015-08-27T22:29:52" Importance="Medium" Text="'Tetris_testbed::Polyomino' -  (Class) : success (file replaced) - C:\Users\Arjun\OneDrive\git-tetris\ModelingProject1Lib\GeneratedCode\Polyomino.cs" />
+  <Message Timestamp="2015-08-27T22:29:52" Importance="Medium" Text="'Tetris_testbed::TetrisModel' -  (Class) : success (file replaced) - C:\Users\Arjun\OneDrive\git-tetris\ModelingProject1Lib\GeneratedCode\TetrisModel.cs" />
+  <Message Timestamp="2015-08-27T22:29:52" Importance="Medium" Text="'Tetris_testbed::TetrisViewer' -  (Class) : success (file replaced) - C:\Users\Arjun\OneDrive\git-tetris\ModelingProject1Lib\GeneratedCode\TetrisViewer.cs" />
+  <Message Timestamp="2015-08-27T22:29:53" Importance="Medium" Text="'Tetris_testbed::board' -  (Class) : success (file replaced) - C:\Users\Arjun\OneDrive\git-tetris\ModelingProject1Lib\GeneratedCode\board.cs" />
+  <Message Timestamp="2015-08-27T22:29:53" Importance="Medium" Text="'Tetris_testbed::Polyomino' -  (Class) : success (file replaced) - C:\Users\Arjun\OneDrive\git-tetris\ModelingProject1Lib\GeneratedCode\Polyomino.cs" />
+  <Message Timestamp="2015-08-27T22:29:53" Importance="Medium" Text="'Tetris_testbed::OPiece' -  (Class) : success (file replaced) - C:\Users\Arjun\OneDrive\git-tetris\ModelingProject1Lib\GeneratedCode\OPiece.cs" />
+  <Message Timestamp="2015-08-27T22:29:53" Importance="Medium" Text="'Tetris_testbed::PolynominoFactory' -  (Class) : success (file replaced) - C:\Users\Arjun\OneDrive\git-tetris\ModelingProject1Lib\GeneratedCode\PolynominoFactory.cs" />
+  <Message Timestamp="2015-08-27T22:29:53" Importance="Medium" Text="'Tetris_testbed::IPiece' -  (Class) : success (file replaced) - C:\Users\Arjun\OneDrive\git-tetris\ModelingProject1Lib\GeneratedCode\IPiece.cs" />
+  <Message Timestamp="2015-08-27T22:29:54" Importance="Medium" Text="'Tetris_testbed::SPiece' -  (Class) : success (file replaced) - C:\Users\Arjun\OneDrive\git-tetris\ModelingProject1Lib\GeneratedCode\SPiece.cs" />
+  <Message Timestamp="2015-08-27T22:29:54" Importance="Medium" Text="'Tetris_testbed::ZPiece' -  (Class) : success (file replaced) - C:\Users\Arjun\OneDrive\git-tetris\ModelingProject1Lib\GeneratedCode\ZPiece.cs" />
+  <Message Timestamp="2015-08-27T22:29:54" Importance="Medium" Text="'Tetris_testbed::TPiece' -  (Class) : success (file replaced) - C:\Users\Arjun\OneDrive\git-tetris\ModelingProject1Lib\GeneratedCode\TPiece.cs" />
+  <Message Timestamp="2015-08-27T22:29:54" Importance="Medium" Text="'Tetris_testbed::JPiece' -  (Class) : success (file replaced) - C:\Users\Arjun\OneDrive\git-tetris\ModelingProject1Lib\GeneratedCode\JPiece.cs" />
+  <Message Timestamp="2015-08-27T22:29:54" Importance="Medium" Text="'Tetris_testbed::LPiece' -  (Class) : success (file replaced) - C:\Users\Arjun\OneDrive\git-tetris\ModelingProject1Lib\GeneratedCode\LPiece.cs" />
+  <Message Timestamp="2015-08-27T22:29:55" Importance="Medium" Text="'Tetris_testbed::Class1' -  (Class) : success (file replaced) - C:\Users\Arjun\OneDrive\git-tetris\ModelingProject1Lib\GeneratedCode\Class1.cs" />
+  <Message Timestamp="2015-08-27T22:29:55" Importance="Medium" Text="'Tetris_testbed::RotateLeft' -  (Class) : success (file replaced) - C:\Users\Arjun\OneDrive\git-tetris\ModelingProject1Lib\GeneratedCode\RotateLeft.cs" />
+  <Message Timestamp="2015-08-27T22:29:55" Importance="Medium" Text="'Tetris_testbed::RotateRight' -  (Class) : success (file replaced) - C:\Users\Arjun\OneDrive\git-tetris\ModelingProject1Lib\GeneratedCode\RotateRight.cs" />
+  <Message Timestamp="2015-08-27T22:29:55" Importance="Medium" Text="'Tetris_testbed::RotateLeftVisitor' -  (Class) : success (file replaced) - C:\Users\Arjun\OneDrive\git-tetris\ModelingProject1Lib\GeneratedCode\RotateLeftVisitor.cs" />
+  <Message Timestamp="2015-08-27T22:29:55" Importance="Medium" Text="'Tetris_testbed::RotateRight1' -  (Class) : success (file replaced) - C:\Users\Arjun\OneDrive\git-tetris\ModelingProject1Lib\GeneratedCode\RotateRight1.cs" />
+  <Message Timestamp="2015-08-27T22:29:56" Importance="Medium" Text="'Tetris_testbed::RotateRightVisitor' -  (Class) : success (file replaced) - C:\Users\Arjun\OneDrive\git-tetris\ModelingProject1Lib\GeneratedCode\RotateRightVisitor.cs" />
+  <Message Timestamp="2015-08-27T22:29:56" Importance="Medium" Text="'Tetris_testbed::FinalizeOnBoardVisitor' -  (Class) : success (file replaced) - C:\Users\Arjun\OneDrive\git-tetris\ModelingProject1Lib\GeneratedCode\FinalizeOnBoardVisitor.cs" />
+  <Message Timestamp="2015-08-27T22:29:56" Importance="Medium" Text="'Tetris_testbed::MoveOnBoardVisitor' -  (Class) : success (file replaced) - C:\Users\Arjun\OneDrive\git-tetris\ModelingProject1Lib\GeneratedCode\MoveOnBoardVisitor.cs" />
+  <Message Timestamp="2015-08-27T22:29:56" Importance="Medium" Text="'Tetris_testbed::MoveContineousVisitor' -  (Class) : success (file replaced) - C:\Users\Arjun\OneDrive\git-tetris\ModelingProject1Lib\GeneratedCode\MoveContineousVisitor.cs" />
+  <Message Timestamp="2015-08-27T22:29:56" Importance="Medium" Text="'Tetris_testbed::CanChangeLocalVisitor' -  (Class) : success (file replaced) - C:\Users\Arjun\OneDrive\git-tetris\ModelingProject1Lib\GeneratedCode\CanChangeLocalVisitor.cs" />
+  <Message Timestamp="2015-08-27T22:29:56" Importance="Diagnostic" Text="Name = InterfaceTemplate" />
+  <Message Timestamp="2015-08-27T22:29:56" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2015-08-27T22:29:56" Importance="Diagnostic" Text="ProjectPath = ..\ModelingProject1Lib\ModelingProject1Lib.csproj" />
+  <Message Timestamp="2015-08-27T22:29:56" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2015-08-27T22:29:56" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2015-08-27T22:29:56" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4" />
+  <Message Timestamp="2015-08-27T22:29:56" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\InterfaceTemplate.t4" />
+  <Message Timestamp="2015-08-27T22:29:56" Importance="Medium" Text="Tetris_testbed's Text Template Binding: 'InterfaceTemplate' will apply InterfaceTemplate.t4 to: 'Tetris_testbed::RotateLeft' -  (Interface), 'Tetris_testbed::RotateRight' -  (Interface), 'Tetris_testbed::FinalizeOnBoard' -  (Interface), 'Tetris_testbed::MoveOnBoard' -  (Interface), 'Tetris_testbed::MoveContineous' -  (Interface), 'Tetris_testbed::CanChangeLocal' -  (Interface) " />
+  <Message Timestamp="2015-08-27T22:29:57" Importance="Medium" Text="'Tetris_testbed::RotateLeft' -  (Interface) : success (file replaced) - C:\Users\Arjun\OneDrive\git-tetris\ModelingProject1Lib\GeneratedCode\RotateLeft.cs" />
+  <Message Timestamp="2015-08-27T22:29:57" Importance="Medium" Text="'Tetris_testbed::RotateRight' -  (Interface) : success (file replaced) - C:\Users\Arjun\OneDrive\git-tetris\ModelingProject1Lib\GeneratedCode\RotateRight.cs" />
+  <Message Timestamp="2015-08-27T22:29:57" Importance="Medium" Text="'Tetris_testbed::FinalizeOnBoard' -  (Interface) : success (file replaced) - C:\Users\Arjun\OneDrive\git-tetris\ModelingProject1Lib\GeneratedCode\FinalizeOnBoard.cs" />
+  <Message Timestamp="2015-08-27T22:29:57" Importance="Medium" Text="'Tetris_testbed::MoveOnBoard' -  (Interface) : success (file replaced) - C:\Users\Arjun\OneDrive\git-tetris\ModelingProject1Lib\GeneratedCode\MoveOnBoard.cs" />
+  <Message Timestamp="2015-08-27T22:29:57" Importance="Medium" Text="'Tetris_testbed::MoveContineous' -  (Interface) : success (file replaced) - C:\Users\Arjun\OneDrive\git-tetris\ModelingProject1Lib\GeneratedCode\MoveContineous.cs" />
+  <Message Timestamp="2015-08-27T22:29:57" Importance="Medium" Text="'Tetris_testbed::CanChangeLocal' -  (Interface) : success (file replaced) - C:\Users\Arjun\OneDrive\git-tetris\ModelingProject1Lib\GeneratedCode\CanChangeLocal.cs" />
+  <Message Timestamp="2015-08-27T22:29:57" Importance="Diagnostic" Text="Name = StructTemplate" />
+  <Message Timestamp="2015-08-27T22:29:57" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2015-08-27T22:29:57" Importance="Diagnostic" Text="ProjectPath = ..\ModelingProject1Lib\ModelingProject1Lib.csproj" />
+  <Message Timestamp="2015-08-27T22:29:57" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2015-08-27T22:29:57" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2015-08-27T22:29:57" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2015-08-27T22:29:57" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2015-08-27T22:29:57" Importance="Medium" Text="Tetris_testbed's Text Template Binding: 'StructTemplate' will apply StructTemplate.t4 to: 'Tetris_testbed::Block' -  (Class), 'Tetris_testbed::Polyomino' -  (Class), 'Tetris_testbed::TetrisModel' -  (Class), 'Tetris_testbed::TetrisViewer' -  (Class), 'Tetris_testbed::board' -  (Class), 'Tetris_testbed::Polyomino' -  (Class), 'Tetris_testbed::OPiece' -  (Class), 'Tetris_testbed::PolynominoFactory' -  (Class), 'Tetris_testbed::IPiece' -  (Class), 'Tetris_testbed::SPiece' -  (Class), 'Tetris_testbed::ZPiece' -  (Class), 'Tetris_testbed::TPiece' -  (Class), 'Tetris_testbed::JPiece' -  (Class), 'Tetris_testbed::LPiece' -  (Class), 'Tetris_testbed::Class1' -  (Class), 'Tetris_testbed::RotateLeft' -  (Class), 'Tetris_testbed::RotateRight' -  (Class), 'Tetris_testbed::RotateLeftVisitor' -  (Class), 'Tetris_testbed::RotateRight1' -  (Class), 'Tetris_testbed::RotateRightVisitor' -  (Class), 'Tetris_testbed::FinalizeOnBoardVisitor' -  (Class), 'Tetris_testbed::MoveOnBoardVisitor' -  (Class), 'Tetris_testbed::MoveContineousVisitor' -  (Class), 'Tetris_testbed::CanChangeLocalVisitor' -  (Class) " />
+  <Message Timestamp="2015-08-27T22:29:57" Importance="Diagnostic" Text="'Tetris_testbed::Block' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-08-27T22:29:57" Importance="Diagnostic" Text="'Tetris_testbed::Polyomino' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-08-27T22:29:57" Importance="Diagnostic" Text="'Tetris_testbed::TetrisModel' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-08-27T22:29:57" Importance="Diagnostic" Text="'Tetris_testbed::TetrisViewer' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-08-27T22:29:57" Importance="Diagnostic" Text="'Tetris_testbed::board' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-08-27T22:29:57" Importance="Diagnostic" Text="'Tetris_testbed::Polyomino' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-08-27T22:29:57" Importance="Diagnostic" Text="'Tetris_testbed::OPiece' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-08-27T22:29:57" Importance="Diagnostic" Text="'Tetris_testbed::PolynominoFactory' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-08-27T22:29:58" Importance="Diagnostic" Text="'Tetris_testbed::IPiece' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-08-27T22:29:58" Importance="Diagnostic" Text="'Tetris_testbed::SPiece' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-08-27T22:29:58" Importance="Diagnostic" Text="'Tetris_testbed::ZPiece' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-08-27T22:29:58" Importance="Diagnostic" Text="'Tetris_testbed::TPiece' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-08-27T22:29:58" Importance="Diagnostic" Text="'Tetris_testbed::JPiece' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-08-27T22:29:58" Importance="Diagnostic" Text="'Tetris_testbed::LPiece' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-08-27T22:29:58" Importance="Diagnostic" Text="'Tetris_testbed::Class1' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-08-27T22:29:58" Importance="Diagnostic" Text="'Tetris_testbed::RotateLeft' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-08-27T22:29:58" Importance="Diagnostic" Text="'Tetris_testbed::RotateRight' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-08-27T22:29:58" Importance="Diagnostic" Text="'Tetris_testbed::RotateLeftVisitor' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-08-27T22:29:58" Importance="Diagnostic" Text="'Tetris_testbed::RotateRight1' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-08-27T22:29:58" Importance="Diagnostic" Text="'Tetris_testbed::RotateRightVisitor' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-08-27T22:29:58" Importance="Diagnostic" Text="'Tetris_testbed::FinalizeOnBoardVisitor' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-08-27T22:29:58" Importance="Diagnostic" Text="'Tetris_testbed::MoveOnBoardVisitor' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-08-27T22:29:58" Importance="Diagnostic" Text="'Tetris_testbed::MoveContineousVisitor' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-08-27T22:29:58" Importance="Diagnostic" Text="'Tetris_testbed::CanChangeLocalVisitor' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2015-08-27T22:29:59" Importance="Diagnostic" Text="The selection included 30 elements which were not bound to a template." />
+  <Message Timestamp="2015-08-27T22:29:59" Importance="Diagnostic" Text="'Tetris_testbed' -  (ModelStoreModel): no bound template." />
+  <Message Timestamp="2015-08-27T22:29:59" Importance="Diagnostic" Text="'597b7bfc-2d7c-48c8-9d0e-379e43113af2' -  (Comment): no bound template." />
+  <Message Timestamp="2015-08-27T22:29:59" Importance="Diagnostic" Text="'c08a902a-c3fa-4768-91cf-f5d2562d1384' -  (Comment): no bound template." />
+  <Message Timestamp="2015-08-27T22:29:59" Importance="Diagnostic" Text="'06f776df-3173-48c3-9a8b-91f00508fce3' -  (Comment): no bound template." />
+  <Message Timestamp="2015-08-27T22:29:59" Importance="Diagnostic" Text="'bool' -  (UndefinedType): no bound template." />
+  <Message Timestamp="2015-08-27T22:29:59" Importance="Diagnostic" Text="'int' -  (UndefinedType): no bound template." />
+  <Message Timestamp="2015-08-27T22:29:59" Importance="Diagnostic" Text="'void' -  (UndefinedType): no bound template." />
+  <Message Timestamp="2015-08-27T22:29:59" Importance="Diagnostic" Text="'Color' -  (UndefinedType): no bound template." />
+  <Message Timestamp="2015-08-27T22:29:59" Importance="Diagnostic" Text="'block[]' -  (UndefinedType): no bound template." />
+  <Message Timestamp="2015-08-27T22:29:59" Importance="Diagnostic" Text="'y' -  (UndefinedType): no bound template." />
+  <Message Timestamp="2015-08-27T22:29:59" Importance="Diagnostic" Text="'Block[]' -  (UndefinedType): no bound template." />
+  <Message Timestamp="2015-08-27T22:29:59" Importance="Diagnostic" Text="'x' -  (UndefinedType): no bound template." />
+  <Message Timestamp="2015-08-27T22:29:59" Importance="Diagnostic" Text="'Board' -  (UndefinedType): no bound template." />
+  <Message Timestamp="2015-08-27T22:29:59" Importance="Diagnostic" Text="'Polynomino' -  (UndefinedType): no bound template." />
+  <Message Timestamp="2015-08-27T22:29:59" Importance="Diagnostic" Text="'RotateRightVisitor' -  (UndefinedType): no bound template." />
+  <Message Timestamp="2015-08-27T22:29:59" Importance="Diagnostic" Text="'FinalizeOnBoardVisitor' -  (UndefinedType): no bound template." />
+  <Message Timestamp="2015-08-27T22:29:59" Importance="Diagnostic" Text="'MoveOnBoardVistor' -  (UndefinedType): no bound template." />
+  <Message Timestamp="2015-08-27T22:29:59" Importance="Diagnostic" Text="'MoveOnBoardVisito' -  (UndefinedType): no bound template." />
+  <Message Timestamp="2015-08-27T22:29:59" Importance="Diagnostic" Text="'state' -  (UndefinedType): no bound template." />
+  <Message Timestamp="2015-08-27T22:29:59" Importance="Diagnostic" Text="'BLock' -  (UndefinedType): no bound template." />
+  <Message Timestamp="2015-08-27T22:29:59" Importance="Diagnostic" Text="'Tetris_testbed::' -  (Association): no bound template." />
+  <Message Timestamp="2015-08-27T22:29:59" Importance="Diagnostic" Text="'Tetris_testbed::' -  (Dependency): no bound template." />
+  <Message Timestamp="2015-08-27T22:29:59" Importance="Diagnostic" Text="'Tetris_testbed::' -  (Association): no bound template." />
+  <Message Timestamp="2015-08-27T22:29:59" Importance="Diagnostic" Text="'Tetris_testbed::' -  (Association): no bound template." />
+  <Message Timestamp="2015-08-27T22:29:59" Importance="Diagnostic" Text="'Tetris_testbed::' -  (Dependency): no bound template." />
+  <Message Timestamp="2015-08-27T22:29:59" Importance="Diagnostic" Text="'Tetris_testbed::' -  (Dependency): no bound template." />
+  <Message Timestamp="2015-08-27T22:29:59" Importance="Diagnostic" Text="'Tetris_testbed::' -  (Dependency): no bound template." />
+  <Message Timestamp="2015-08-27T22:29:59" Importance="Diagnostic" Text="'Tetris_testbed::' -  (Dependency): no bound template." />
+  <Message Timestamp="2015-08-27T22:29:59" Importance="Diagnostic" Text="'Tetris_testbed::' -  (Dependency): no bound template." />
+  <Message Timestamp="2015-08-27T22:29:59" Importance="Diagnostic" Text="'Tetris_testbed::' -  (Dependency): no bound template." />
+  <Message Timestamp="2015-08-27T22:29:59" Importance="High" Text="Code generation complete. Errors: 0. Warnings: 0." />
+</Log>
