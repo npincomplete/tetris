@@ -34,7 +34,11 @@ public class Block
 		get;
 		set;
 	}
-
+    public void helloMe()
+    {
+        Console.WriteLine("waddup");
+        Console.ReadKey();
+    }
 	public virtual int draw_x
 	{
 		get;
