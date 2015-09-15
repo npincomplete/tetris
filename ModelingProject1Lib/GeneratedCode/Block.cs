@@ -24,7 +24,7 @@ public class Block
 	}
 
 	public virtual int board_y
-	{
+	{Console.WriteLine("Hello git hub");
 		get;
 		set;
 	}
