@@ -5,28 +5,37 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 using System;
+using System.Drawing;
+
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
 public abstract class Polyomino
 {
+    int _state;
+    Boolean _whole;
+    Block[] block;
+    //private ghostBlock[] gblock;
+     ConsoleColor _color;
+
+
 	public virtual int state
 	{
-		get;
-		set;
+		get { return this._state; }
+		set { this._state = value; }
 	}
 
 	public virtual Color color
 	{
-		get;
-		set;
+		get {return this._color; }
+		set { this._color = value; }
 	}
 
 	public virtual bool whole
 	{
-		get;
-		set;
+		get { return _whole };
+		set { this._whole = value };
 	}
 
 	public virtual Block[] blocks
@@ -80,6 +89,16 @@ public abstract class Polyomino
 	{
 		throw new System.NotImplementedException();
 	}
+
+
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Hello World");
+        Console.ReadLine();
+    }
+
+
+
 
 }
 

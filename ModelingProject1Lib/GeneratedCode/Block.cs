@@ -11,10 +11,23 @@ using System.Text;
 
 public class Block
 {
+    private int board_x;
+    private int board_y;
+    private int draw_x;
+    private int draw_y;
+
+
+    public Block()
+    {
+
+    }
+
+
+
 	public virtual int board_x
 	{
-		get;
-		set;
+	    
+	
 	}
 
 	public virtual Polyomino piece
@@ -24,7 +37,7 @@ public class Block
 	}
 
 	public virtual int board_y
-	{Console.WriteLine("Hello git hub");
+	{
 		get;
 		set;
 	}
@@ -34,11 +47,7 @@ public class Block
 		get;
 		set;
 	}
-    public void helloMe()
-    {
-        Console.WriteLine("waddup");
-        Console.ReadKey();
-    }
+   
 	public virtual int draw_x
 	{
 		get;
@@ -60,7 +69,7 @@ public class Block
 		throw new System.NotImplementedException();
 	}
 
-	public virtual bool CanMove(int x, y int)
+	public virtual bool CanMove(int x, int y)
 	{
 		throw new System.NotImplementedException();
 	}
