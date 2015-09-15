@@ -11,57 +11,43 @@ using System.Text;
 
 public class Block
 {
-    private int board_x;
-    private int board_y;
-    private int draw_x;
-    private int draw_y;
-
-
-    public Block()
-    {
-
-    }
-
-
-
 	public virtual int board_x
 	{
-	    
-	
+        get { return board_x; }
+        set { board_x = value; }
 	}
 
 	public virtual Polyomino piece
 	{
-		get;
-		set;
-	}
+        get { return piece; }
+        set { piece = value; }
+    }
 
 	public virtual int board_y
 	{
-		get;
-		set;
-	}
+        get { return board_y; }
+        set { board_y = value; }
+    }
 
 	public virtual int draw_y
 	{
-		get;
-		set;
+        get { return draw_y; }
+        set { draw_y = value; }
 	}
-   
 	public virtual int draw_x
 	{
-		get;
-		set;
+        get { return draw_x; }
+		set { draw_x = value; }
 	}
 
-	public virtual void Draw()
+	public virtual void Draw(Board boardState)
 	{
-		throw new System.NotImplementedException();
+
 	}
     //This is a comment for git purposes
-	public virtual void UpdateLocation(int x, int y)
+	public virtual void UpdateLocation(int x, int y, Board boardState)
 	{
-		throw new System.NotImplementedException();
+        
 	}
 
 	public virtual void SetLocation(int x, int y)

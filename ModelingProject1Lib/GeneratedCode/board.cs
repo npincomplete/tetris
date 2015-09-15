@@ -9,13 +9,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public class board
+public class Board
 {
-	public virtual object array of blocks
-	{
-		get;
-		set;
-	}
 
+	public virtual Block[,] blockArray
+	{
+		get { return blockArray; }
+        set { blockArray = value; }
+	}
+   
 }
 

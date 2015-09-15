@@ -41,7 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GeneratedCode\Block.cs" />
-    <Compile Include="GeneratedCode\board.cs" />
+    <Compile Include="GeneratedCode\Board.cs" />
     <Compile Include="GeneratedCode\CanChangeLocal.cs" />
     <Compile Include="GeneratedCode\CanChangeLocalVisitor.cs" />
     <Compile Include="GeneratedCode\Class1.cs" />
